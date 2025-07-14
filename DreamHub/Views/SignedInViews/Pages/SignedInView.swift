@@ -20,7 +20,7 @@ struct SignedInView: View {
                     if page == 0{
                         CalendarPageView(coreAppModel: coreAppModel)
                     } else if page == 1{
-                        NewDreamView(coreAppModel: coreAppModel, date: date)
+                        GeminiView(coreAppModel: coreAppModel, date: date)
                     } else {
                         GeminiView(coreAppModel: coreAppModel, date: date)
                     }

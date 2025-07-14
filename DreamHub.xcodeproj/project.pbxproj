@@ -21,7 +21,8 @@
 		285A15842E245476007DCD97 /* FirestoreDBMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A15832E245475007DCD97 /* FirestoreDBMgr.swift */; };
 		285A15862E245507007DCD97 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 285A15852E245507007DCD97 /* FirebaseFirestore */; };
 		285A158B2E246B82007DCD97 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 285A158A2E246B82007DCD97 /* MarkdownUI */; };
-		28C76BF52E1858D8000B5716 /* NewDreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C76BF42E1858D8000B5716 /* NewDreamView.swift */; };
+		2862938E2E2581AC009F79D9 /* DreamTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2862938D2E2581AC009F79D9 /* DreamTextFieldView.swift */; };
+		28C76BF52E1858D8000B5716 /* DreamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C76BF42E1858D8000B5716 /* DreamDetailView.swift */; };
 		28DA06B82E0E272900426E91 /* DreamHubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DA06B72E0E272900426E91 /* DreamHubApp.swift */; };
 		28DA06BA2E0E272900426E91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DA06B92E0E272900426E91 /* ContentView.swift */; };
 		28DA06BC2E0E272C00426E91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28DA06BB2E0E272C00426E91 /* Assets.xcassets */; };
@@ -66,7 +67,8 @@
 		285A157B2E244E0F007DCD97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		285A157E2E245067007DCD97 /* FirebaseMgr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMgr.swift; sourceTree = "<group>"; };
 		285A15832E245475007DCD97 /* FirestoreDBMgr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreDBMgr.swift; sourceTree = "<group>"; };
-		28C76BF42E1858D8000B5716 /* NewDreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDreamView.swift; sourceTree = "<group>"; };
+		2862938D2E2581AC009F79D9 /* DreamTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamTextFieldView.swift; sourceTree = "<group>"; };
+		28C76BF42E1858D8000B5716 /* DreamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamDetailView.swift; sourceTree = "<group>"; };
 		28DA06B42E0E272900426E91 /* DreamHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DA06B72E0E272900426E91 /* DreamHubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamHubApp.swift; sourceTree = "<group>"; };
 		28DA06B92E0E272900426E91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,8 +120,9 @@
 		280149A12E0F5CCF00B89F52 /* SignedInViews */ = {
 			isa = PBXGroup;
 			children = (
+				2862938C2E25813E009F79D9 /* GeminiViews */,
+				2862938B2E257F38009F79D9 /* Pages */,
 				28EE50A82E10BCEC005D06DC /* Utils */,
-				282CE6192E0E3BCA00DDC64A /* SignedInView.swift */,
 				280149A22E0F5CDB00B89F52 /* CalendarPageViews */,
 			);
 			path = SignedInViews;
@@ -130,7 +133,7 @@
 			children = (
 				282CE6152E0E393E00DDC64A /* DreamsListView.swift */,
 				2801499D2E0F5BA600B89F52 /* CalendarPageView.swift */,
-				28C76BF42E1858D8000B5716 /* NewDreamView.swift */,
+				28C76BF42E1858D8000B5716 /* DreamDetailView.swift */,
 			);
 			path = CalendarPageViews;
 			sourceTree = "<group>";
@@ -160,6 +163,23 @@
 				285A15832E245475007DCD97 /* FirestoreDBMgr.swift */,
 			);
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		2862938B2E257F38009F79D9 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				282CE6192E0E3BCA00DDC64A /* SignedInView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		2862938C2E25813E009F79D9 /* GeminiViews */ = {
+			isa = PBXGroup;
+			children = (
+				28EE50A92E10BD0A005D06DC /* GeminiView.swift */,
+				2862938D2E2581AC009F79D9 /* DreamTextFieldView.swift */,
+			);
+			path = GeminiViews;
 			sourceTree = "<group>";
 		};
 		28DA06AB2E0E272900426E91 = {
@@ -271,7 +291,6 @@
 			isa = PBXGroup;
 			children = (
 				28EE50A62E10BB29005D06DC /* NavBarView.swift */,
-				28EE50A92E10BD0A005D06DC /* GeminiView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -423,6 +442,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2862938E2E2581AC009F79D9 /* DreamTextFieldView.swift in Sources */,
 				285A15842E245476007DCD97 /* FirestoreDBMgr.swift in Sources */,
 				280149A52E0F5DFC00B89F52 /* CoreAppModel.swift in Sources */,
 				285A157F2E245067007DCD97 /* FirebaseMgr.swift in Sources */,
@@ -437,7 +457,7 @@
 				28DA06B82E0E272900426E91 /* DreamHubApp.swift in Sources */,
 				28EE50A72E10BB29005D06DC /* NavBarView.swift in Sources */,
 				28E01AEC2E22FAF700BC8D92 /* APIKey.swift in Sources */,
-				28C76BF52E1858D8000B5716 /* NewDreamView.swift in Sources */,
+				28C76BF52E1858D8000B5716 /* DreamDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,6 @@ struct DreamsListView: View {
     @State var date: Date
 
     private var filteredDreams: [DreamModel] {
-        print(date)
         return coreAppModel.dreamsList.filter {
             Calendar.current.isDate($0.date ?? Date(), inSameDayAs: date)
         }
