@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2801499B2E0F575200B89F52 /* DreamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2801499A2E0F575200B89F52 /* DreamModel.swift */; };
+		2801499E2E0F5BA600B89F52 /* CalendarPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2801499D2E0F5BA600B89F52 /* CalendarPageView.swift */; };
+		280149A02E0F5BF200B89F52 /* ElegantCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 2801499F2E0F5BF200B89F52 /* ElegantCalendar */; };
+		280149A52E0F5DFC00B89F52 /* CoreAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280149A42E0F5DFC00B89F52 /* CoreAppModel.swift */; };
+		280149AA2E0F685200B89F52 /* ElegantCalendar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280149A92E0F685200B89F52 /* ElegantCalendar.xcassets */; };
+		282CE6162E0E393E00DDC64A /* DreamsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282CE6152E0E393E00DDC64A /* DreamsListView.swift */; };
+		282CE6182E0E3B9E00DDC64A /* PreSignedInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282CE6172E0E3B9E00DDC64A /* PreSignedInView.swift */; };
+		282CE61A2E0E3BCA00DDC64A /* SignedInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282CE6192E0E3BCA00DDC64A /* SignedInView.swift */; };
+		285A157C2E244E0F007DCD97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 285A157B2E244E0F007DCD97 /* GoogleService-Info.plist */; };
+		285A157F2E245067007DCD97 /* FirebaseMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A157E2E245067007DCD97 /* FirebaseMgr.swift */; };
+		285A15822E24516F007DCD97 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 285A15812E24516F007DCD97 /* FirebaseCore */; };
+		285A15842E245476007DCD97 /* FirestoreDBMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A15832E245475007DCD97 /* FirestoreDBMgr.swift */; };
+		285A15862E245507007DCD97 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 285A15852E245507007DCD97 /* FirebaseFirestore */; };
+		285A158B2E246B82007DCD97 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 285A158A2E246B82007DCD97 /* MarkdownUI */; };
+		28C76BF52E1858D8000B5716 /* NewDreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C76BF42E1858D8000B5716 /* NewDreamView.swift */; };
+		28DA06B82E0E272900426E91 /* DreamHubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DA06B72E0E272900426E91 /* DreamHubApp.swift */; };
+		28DA06BA2E0E272900426E91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DA06B92E0E272900426E91 /* ContentView.swift */; };
+		28DA06BC2E0E272C00426E91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28DA06BB2E0E272C00426E91 /* Assets.xcassets */; };
+		28DA06BF2E0E272C00426E91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28DA06BE2E0E272C00426E91 /* Preview Assets.xcassets */; };
+		28DA06C92E0E272C00426E91 /* DreamHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DA06C82E0E272C00426E91 /* DreamHubTests.swift */; };
+		28DA06D32E0E272C00426E91 /* DreamHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DA06D22E0E272C00426E91 /* DreamHubUITests.swift */; };
+		28DA06D52E0E272C00426E91 /* DreamHubUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DA06D42E0E272C00426E91 /* DreamHubUITestsLaunchTests.swift */; };
+		28E01AE42E22F95000BC8D92 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 28E01AE32E22F95000BC8D92 /* GoogleGenerativeAI */; };
+		28E01AEA2E22F9E600BC8D92 /* GenerativeAI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28E01AE92E22F9E600BC8D92 /* GenerativeAI-Info.plist */; };
+		28E01AEC2E22FAF700BC8D92 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E01AEB2E22FAF700BC8D92 /* APIKey.swift */; };
+		28E01AEF2E22FC5000BC8D92 /* GeminiLLMmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E01AEE2E22FC5000BC8D92 /* GeminiLLMmodel.swift */; };
+		28E3D08A2E2483DB00D206F5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 28E3D0892E2483DB00D206F5 /* README.md */; };
+		28EE50A72E10BB29005D06DC /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EE50A62E10BB29005D06DC /* NavBarView.swift */; };
+		28EE50AA2E10BD0A005D06DC /* GeminiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EE50A92E10BD0A005D06DC /* GeminiView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28DA06C52E0E272C00426E91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28DA06AC2E0E272900426E91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28DA06B32E0E272900426E91;
+			remoteInfo = DreamHub;
+		};
+		28DA06CF2E0E272C00426E91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28DA06AC2E0E272900426E91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28DA06B32E0E272900426E91;
+			remoteInfo = DreamHub;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2801499A2E0F575200B89F52 /* DreamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamModel.swift; sourceTree = "<group>"; };
+		2801499D2E0F5BA600B89F52 /* CalendarPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPageView.swift; sourceTree = "<group>"; };
+		280149A42E0F5DFC00B89F52 /* CoreAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAppModel.swift; sourceTree = "<group>"; };
+		280149A92E0F685200B89F52 /* ElegantCalendar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ElegantCalendar.xcassets; sourceTree = "<group>"; };
+		282CE6152E0E393E00DDC64A /* DreamsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamsListView.swift; sourceTree = "<group>"; };
+		282CE6172E0E3B9E00DDC64A /* PreSignedInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreSignedInView.swift; sourceTree = "<group>"; };
+		282CE6192E0E3BCA00DDC64A /* SignedInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInView.swift; sourceTree = "<group>"; };
+		285A157B2E244E0F007DCD97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		285A157E2E245067007DCD97 /* FirebaseMgr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMgr.swift; sourceTree = "<group>"; };
+		285A15832E245475007DCD97 /* FirestoreDBMgr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreDBMgr.swift; sourceTree = "<group>"; };
+		28C76BF42E1858D8000B5716 /* NewDreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDreamView.swift; sourceTree = "<group>"; };
+		28DA06B42E0E272900426E91 /* DreamHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DA06B72E0E272900426E91 /* DreamHubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamHubApp.swift; sourceTree = "<group>"; };
+		28DA06B92E0E272900426E91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		28DA06BB2E0E272C00426E91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28DA06BE2E0E272C00426E91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		28DA06C42E0E272C00426E91 /* DreamHubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamHubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DA06C82E0E272C00426E91 /* DreamHubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamHubTests.swift; sourceTree = "<group>"; };
+		28DA06CE2E0E272C00426E91 /* DreamHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DA06D22E0E272C00426E91 /* DreamHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamHubUITests.swift; sourceTree = "<group>"; };
+		28DA06D42E0E272C00426E91 /* DreamHubUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamHubUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		28E01AE92E22F9E600BC8D92 /* GenerativeAI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenerativeAI-Info.plist"; sourceTree = "<group>"; };
+		28E01AEB2E22FAF700BC8D92 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		28E01AEE2E22FC5000BC8D92 /* GeminiLLMmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiLLMmodel.swift; sourceTree = "<group>"; };
+		28E3D0892E2483DB00D206F5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		28EE50A62E10BB29005D06DC /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
+		28EE50A92E10BD0A005D06DC /* GeminiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28DA06B12E0E272900426E91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280149A02E0F5BF200B89F52 /* ElegantCalendar in Frameworks */,
+				285A15862E245507007DCD97 /* FirebaseFirestore in Frameworks */,
+				285A15822E24516F007DCD97 /* FirebaseCore in Frameworks */,
+				28E01AE42E22F95000BC8D92 /* GoogleGenerativeAI in Frameworks */,
+				285A158B2E246B82007DCD97 /* MarkdownUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DA06C12E0E272C00426E91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DA06CB2E0E272C00426E91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		280149A12E0F5CCF00B89F52 /* SignedInViews */ = {
+			isa = PBXGroup;
+			children = (
+				28EE50A82E10BCEC005D06DC /* Utils */,
+				282CE6192E0E3BCA00DDC64A /* SignedInView.swift */,
+				280149A22E0F5CDB00B89F52 /* CalendarPageViews */,
+			);
+			path = SignedInViews;
+			sourceTree = "<group>";
+		};
+		280149A22E0F5CDB00B89F52 /* CalendarPageViews */ = {
+			isa = PBXGroup;
+			children = (
+				282CE6152E0E393E00DDC64A /* DreamsListView.swift */,
+				2801499D2E0F5BA600B89F52 /* CalendarPageView.swift */,
+				28C76BF42E1858D8000B5716 /* NewDreamView.swift */,
+			);
+			path = CalendarPageViews;
+			sourceTree = "<group>";
+		};
+		280149A32E0F5DC600B89F52 /* DreamCalendarModels */ = {
+			isa = PBXGroup;
+			children = (
+				2801499A2E0F575200B89F52 /* DreamModel.swift */,
+			);
+			path = DreamCalendarModels;
+			sourceTree = "<group>";
+		};
+		280149AB2E0F686500B89F52 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				280149A92E0F685200B89F52 /* ElegantCalendar.xcassets */,
+				28DA06BB2E0E272C00426E91 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		285A15802E245072007DCD97 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				285A157E2E245067007DCD97 /* FirebaseMgr.swift */,
+				285A157B2E244E0F007DCD97 /* GoogleService-Info.plist */,
+				285A15832E245475007DCD97 /* FirestoreDBMgr.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		28DA06AB2E0E272900426E91 = {
+			isa = PBXGroup;
+			children = (
+				28E3D0892E2483DB00D206F5 /* README.md */,
+				28DA06B62E0E272900426E91 /* DreamHub */,
+				28DA06C72E0E272C00426E91 /* DreamHubTests */,
+				28DA06D12E0E272C00426E91 /* DreamHubUITests */,
+				28E01AE12E22F8EE00BC8D92 /* Frameworks */,
+				28DA06B52E0E272900426E91 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28DA06B52E0E272900426E91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28DA06B42E0E272900426E91 /* DreamHub.app */,
+				28DA06C42E0E272C00426E91 /* DreamHubTests.xctest */,
+				28DA06CE2E0E272C00426E91 /* DreamHubUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28DA06B62E0E272900426E91 /* DreamHub */ = {
+			isa = PBXGroup;
+			children = (
+				285A15802E245072007DCD97 /* Firebase */,
+				28E01AE52E22F98800BC8D92 /* GeminiAPI */,
+				280149AB2E0F686500B89F52 /* Assets */,
+				28DA06E32E0E369C00426E91 /* Models */,
+				28DA06E12E0E283B00426E91 /* Views */,
+				28DA06B72E0E272900426E91 /* DreamHubApp.swift */,
+				28DA06BD2E0E272C00426E91 /* Preview Content */,
+			);
+			path = DreamHub;
+			sourceTree = "<group>";
+		};
+		28DA06BD2E0E272C00426E91 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				28DA06BE2E0E272C00426E91 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		28DA06C72E0E272C00426E91 /* DreamHubTests */ = {
+			isa = PBXGroup;
+			children = (
+				28DA06C82E0E272C00426E91 /* DreamHubTests.swift */,
+			);
+			path = DreamHubTests;
+			sourceTree = "<group>";
+		};
+		28DA06D12E0E272C00426E91 /* DreamHubUITests */ = {
+			isa = PBXGroup;
+			children = (
+				28DA06D22E0E272C00426E91 /* DreamHubUITests.swift */,
+				28DA06D42E0E272C00426E91 /* DreamHubUITestsLaunchTests.swift */,
+			);
+			path = DreamHubUITests;
+			sourceTree = "<group>";
+		};
+		28DA06E12E0E283B00426E91 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				280149A12E0F5CCF00B89F52 /* SignedInViews */,
+				28DA06B92E0E272900426E91 /* ContentView.swift */,
+				282CE6172E0E3B9E00DDC64A /* PreSignedInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		28DA06E32E0E369C00426E91 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				28E01AED2E22FC3700BC8D92 /* GeminiAPIModels */,
+				280149A32E0F5DC600B89F52 /* DreamCalendarModels */,
+				280149A42E0F5DFC00B89F52 /* CoreAppModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		28E01AE12E22F8EE00BC8D92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28E01AE52E22F98800BC8D92 /* GeminiAPI */ = {
+			isa = PBXGroup;
+			children = (
+				28E01AEB2E22FAF700BC8D92 /* APIKey.swift */,
+				28E01AE92E22F9E600BC8D92 /* GenerativeAI-Info.plist */,
+			);
+			path = GeminiAPI;
+			sourceTree = "<group>";
+		};
+		28E01AED2E22FC3700BC8D92 /* GeminiAPIModels */ = {
+			isa = PBXGroup;
+			children = (
+				28E01AEE2E22FC5000BC8D92 /* GeminiLLMmodel.swift */,
+			);
+			path = GeminiAPIModels;
+			sourceTree = "<group>";
+		};
+		28EE50A82E10BCEC005D06DC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				28EE50A62E10BB29005D06DC /* NavBarView.swift */,
+				28EE50A92E10BD0A005D06DC /* GeminiView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28DA06B32E0E272900426E91 /* DreamHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28DA06D82E0E272C00426E91 /* Build configuration list for PBXNativeTarget "DreamHub" */;
+			buildPhases = (
+				28DA06B02E0E272900426E91 /* Sources */,
+				28DA06B12E0E272900426E91 /* Frameworks */,
+				28DA06B22E0E272900426E91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DreamHub;
+			packageProductDependencies = (
+				2801499F2E0F5BF200B89F52 /* ElegantCalendar */,
+				28E01AE32E22F95000BC8D92 /* GoogleGenerativeAI */,
+				285A15812E24516F007DCD97 /* FirebaseCore */,
+				285A15852E245507007DCD97 /* FirebaseFirestore */,
+				285A158A2E246B82007DCD97 /* MarkdownUI */,
+			);
+			productName = DreamHub;
+			productReference = 28DA06B42E0E272900426E91 /* DreamHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28DA06C32E0E272C00426E91 /* DreamHubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28DA06DB2E0E272C00426E91 /* Build configuration list for PBXNativeTarget "DreamHubTests" */;
+			buildPhases = (
+				28DA06C02E0E272C00426E91 /* Sources */,
+				28DA06C12E0E272C00426E91 /* Frameworks */,
+				28DA06C22E0E272C00426E91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28DA06C62E0E272C00426E91 /* PBXTargetDependency */,
+			);
+			name = DreamHubTests;
+			productName = DreamHubTests;
+			productReference = 28DA06C42E0E272C00426E91 /* DreamHubTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28DA06CD2E0E272C00426E91 /* DreamHubUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28DA06DE2E0E272C00426E91 /* Build configuration list for PBXNativeTarget "DreamHubUITests" */;
+			buildPhases = (
+				28DA06CA2E0E272C00426E91 /* Sources */,
+				28DA06CB2E0E272C00426E91 /* Frameworks */,
+				28DA06CC2E0E272C00426E91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28DA06D02E0E272C00426E91 /* PBXTargetDependency */,
+			);
+			name = DreamHubUITests;
+			productName = DreamHubUITests;
+			productReference = 28DA06CE2E0E272C00426E91 /* DreamHubUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28DA06AC2E0E272900426E91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					28DA06B32E0E272900426E91 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					28DA06C32E0E272C00426E91 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 28DA06B32E0E272900426E91;
+					};
+					28DA06CD2E0E272C00426E91 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 28DA06B32E0E272900426E91;
+					};
+				};
+			};
+			buildConfigurationList = 28DA06AF2E0E272900426E91 /* Build configuration list for PBXProject "DreamHub" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28DA06AB2E0E272900426E91;
+			packageReferences = (
+				2801499C2E0F5B8800B89F52 /* XCRemoteSwiftPackageReference "ElegantCalendar" */,
+				28E01AE22E22F94500BC8D92 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+				285A157D2E244FB9007DCD97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				285A15892E246B68007DCD97 /* XCRemoteSwiftPackageReference "MarkdownUI" */,
+			);
+			productRefGroup = 28DA06B52E0E272900426E91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28DA06B32E0E272900426E91 /* DreamHub */,
+				28DA06C32E0E272C00426E91 /* DreamHubTests */,
+				28DA06CD2E0E272C00426E91 /* DreamHubUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28DA06B22E0E272900426E91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DA06BF2E0E272C00426E91 /* Preview Assets.xcassets in Resources */,
+				28DA06BC2E0E272C00426E91 /* Assets.xcassets in Resources */,
+				28E3D08A2E2483DB00D206F5 /* README.md in Resources */,
+				28E01AEA2E22F9E600BC8D92 /* GenerativeAI-Info.plist in Resources */,
+				285A157C2E244E0F007DCD97 /* GoogleService-Info.plist in Resources */,
+				280149AA2E0F685200B89F52 /* ElegantCalendar.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DA06C22E0E272C00426E91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DA06CC2E0E272C00426E91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28DA06B02E0E272900426E91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285A15842E245476007DCD97 /* FirestoreDBMgr.swift in Sources */,
+				280149A52E0F5DFC00B89F52 /* CoreAppModel.swift in Sources */,
+				285A157F2E245067007DCD97 /* FirebaseMgr.swift in Sources */,
+				2801499E2E0F5BA600B89F52 /* CalendarPageView.swift in Sources */,
+				282CE61A2E0E3BCA00DDC64A /* SignedInView.swift in Sources */,
+				28E01AEF2E22FC5000BC8D92 /* GeminiLLMmodel.swift in Sources */,
+				282CE6182E0E3B9E00DDC64A /* PreSignedInView.swift in Sources */,
+				28DA06BA2E0E272900426E91 /* ContentView.swift in Sources */,
+				2801499B2E0F575200B89F52 /* DreamModel.swift in Sources */,
+				28EE50AA2E10BD0A005D06DC /* GeminiView.swift in Sources */,
+				282CE6162E0E393E00DDC64A /* DreamsListView.swift in Sources */,
+				28DA06B82E0E272900426E91 /* DreamHubApp.swift in Sources */,
+				28EE50A72E10BB29005D06DC /* NavBarView.swift in Sources */,
+				28E01AEC2E22FAF700BC8D92 /* APIKey.swift in Sources */,
+				28C76BF52E1858D8000B5716 /* NewDreamView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DA06C02E0E272C00426E91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DA06C92E0E272C00426E91 /* DreamHubTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DA06CA2E0E272C00426E91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DA06D52E0E272C00426E91 /* DreamHubUITestsLaunchTests.swift in Sources */,
+				28DA06D32E0E272C00426E91 /* DreamHubUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28DA06C62E0E272C00426E91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28DA06B32E0E272900426E91 /* DreamHub */;
+			targetProxy = 28DA06C52E0E272C00426E91 /* PBXContainerItemProxy */;
+		};
+		28DA06D02E0E272C00426E91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28DA06B32E0E272900426E91 /* DreamHub */;
+			targetProxy = 28DA06CF2E0E272C00426E91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		28DA06D62E0E272C00426E91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28DA06D72E0E272C00426E91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28DA06D92E0E272C00426E91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DreamHub/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = L.A.Caelius.DreamHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28DA06DA2E0E272C00426E91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DreamHub/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = L.A.Caelius.DreamHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		28DA06DC2E0E272C00426E91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = L.A.Caelius.DreamHubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DreamHub.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DreamHub";
+			};
+			name = Debug;
+		};
+		28DA06DD2E0E272C00426E91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = L.A.Caelius.DreamHubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DreamHub.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DreamHub";
+			};
+			name = Release;
+		};
+		28DA06DF2E0E272C00426E91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = L.A.Caelius.DreamHubUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DreamHub;
+			};
+			name = Debug;
+		};
+		28DA06E02E0E272C00426E91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = L.A.Caelius.DreamHubUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DreamHub;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28DA06AF2E0E272900426E91 /* Build configuration list for PBXProject "DreamHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DA06D62E0E272C00426E91 /* Debug */,
+				28DA06D72E0E272C00426E91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28DA06D82E0E272C00426E91 /* Build configuration list for PBXNativeTarget "DreamHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DA06D92E0E272C00426E91 /* Debug */,
+				28DA06DA2E0E272C00426E91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28DA06DB2E0E272C00426E91 /* Build configuration list for PBXNativeTarget "DreamHubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DA06DC2E0E272C00426E91 /* Debug */,
+				28DA06DD2E0E272C00426E91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28DA06DE2E0E272C00426E91 /* Build configuration list for PBXNativeTarget "DreamHubUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DA06DF2E0E272C00426E91 /* Debug */,
+				28DA06E02E0E272C00426E91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2801499C2E0F5B8800B89F52 /* XCRemoteSwiftPackageReference "ElegantCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ThasianX/ElegantCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.2;
+			};
+		};
+		285A157D2E244FB9007DCD97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.15.0;
+			};
+		};
+		285A15892E246B68007DCD97 /* XCRemoteSwiftPackageReference "MarkdownUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/MarkdownUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
+		28E01AE22E22F94500BC8D92 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2801499F2E0F5BF200B89F52 /* ElegantCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2801499C2E0F5B8800B89F52 /* XCRemoteSwiftPackageReference "ElegantCalendar" */;
+			productName = ElegantCalendar;
+		};
+		285A15812E24516F007DCD97 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 285A157D2E244FB9007DCD97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		285A15852E245507007DCD97 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 285A157D2E244FB9007DCD97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		285A158A2E246B82007DCD97 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 285A15892E246B68007DCD97 /* XCRemoteSwiftPackageReference "MarkdownUI" */;
+			productName = MarkdownUI;
+		};
+		28E01AE32E22F95000BC8D92 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28E01AE22E22F94500BC8D92 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 28DA06AC2E0E272900426E91 /* Project object */;
+}
