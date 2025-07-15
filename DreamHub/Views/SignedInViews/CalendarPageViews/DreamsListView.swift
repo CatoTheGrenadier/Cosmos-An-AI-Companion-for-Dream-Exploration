@@ -19,15 +19,18 @@ struct DreamsListView: View {
     }
     
     var body: some View {
-        VStack{
+        NavigationStack{
             ForEach(self.filteredDreams) { dream in
-              HStack(spacing: 8) {
-                Rectangle()
-                  .fill(Color.blue)
-                  .frame(width: 4, height: 20)
-                Text(dream.content ?? "")
-                Spacer()
-              }
+                NavigationLink(destination: DreamDetailView(coreAppModel:coreAppModel ,dream: dream)) {
+                   HStack(spacing: 8) {
+                       Rectangle()
+                           .fill(Color.blue)
+                           .frame(width: 4, height: 20)
+                       Text(dream.content ?? "")
+                           .foregroundColor(.black)
+                       Spacer()
+                   }
+               }
             }
         }
     }
