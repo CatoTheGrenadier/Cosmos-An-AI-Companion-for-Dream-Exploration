@@ -21,7 +21,7 @@ struct DreamTextFieldView: View {
                     .padding()
                     .scrollContentBackground(.hidden)
                     .frame(minHeight: 300)
-                    .background(Color.indigo.opacity(0.2))
+                    .background(Color(.systemGray6))
                     .disableAutocorrection(true)
                 
                 Spacer()
@@ -64,7 +64,7 @@ struct DreamTextFieldView: View {
                         .scrollContentBackground(.hidden)
                         .padding(.leading,15)
                         .frame(height:50)
-                        .background(Color.indigo.opacity(0.2))
+                        .background(Color(.systemGray6))
                         .disableAutocorrection(true)
                     
                     Rectangle()
@@ -96,7 +96,7 @@ struct DreamTextFieldView: View {
                     .padding()
                     .scrollContentBackground(.hidden)
                     .frame(minHeight: 300)
-                    .background(Color.indigo.opacity(0.2))
+                    .background(Color(.systemGray6))
                     .disableAutocorrection(true)
                 
                 Spacer()
@@ -141,7 +141,7 @@ struct DreamTextFieldView: View {
                         .scrollContentBackground(.hidden)
                         .padding(5)
                         .frame(height:50)
-                        .background(Color.indigo.opacity(0.2))
+                        .background(Color(.systemGray6))
                         .disableAutocorrection(true)
                     
                     Rectangle()

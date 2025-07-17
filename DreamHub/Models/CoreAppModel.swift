@@ -10,7 +10,7 @@ import Foundation
 class CoreAppModel: Codable, ObservableObject {
     var dreamsList: [DreamModel] = []
     var sentimentsSet: Set<String> = []
-    var userId: String
+    var userId: String = ""
     
     init(uid: String) {
         userId = uid

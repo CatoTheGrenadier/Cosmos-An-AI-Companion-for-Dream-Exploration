@@ -10,9 +10,10 @@ import SwiftUI
 
 struct SuperView: View {
     @ObservedObject var authMgr: AuthMgr
+    
     var body: some View {
-        if authMgr == nil {
-            SignInView(authMgr: authMgr)
+        if authMgr.currentUserUID == nil {
+            AuthView(authMgr: authMgr)
         } else {
             SignedInView(authMgr: authMgr)
         }

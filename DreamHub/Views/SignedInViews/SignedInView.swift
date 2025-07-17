@@ -14,7 +14,7 @@ struct SignedInView: View {
     @State var page = 1
     @State var date = Date()
     
-    init() {
+    init(authMgr: AuthMgr) {
         self.authMgr = authMgr
         self.coreAppModel = CoreAppModel(uid: authMgr.currentUserUID ?? "")
         self.page = page
