@@ -12,6 +12,8 @@
 		280149A02E0F5BF200B89F52 /* ElegantCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 2801499F2E0F5BF200B89F52 /* ElegantCalendar */; };
 		280149A52E0F5DFC00B89F52 /* CoreAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280149A42E0F5DFC00B89F52 /* CoreAppModel.swift */; };
 		280149AA2E0F685200B89F52 /* ElegantCalendar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280149A92E0F685200B89F52 /* ElegantCalendar.xcassets */; };
+		280630692E2980B1006F4206 /* SentimentsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280630682E2980B1006F4206 /* SentimentsGridView.swift */; };
+		2806306D2E298395006F4206 /* RomanNumeralKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2806306C2E298395006F4206 /* RomanNumeralKit */; };
 		282CE6162E0E393E00DDC64A /* DreamsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282CE6152E0E393E00DDC64A /* DreamsListView.swift */; };
 		282CE6182E0E3B9E00DDC64A /* PreSignedInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282CE6172E0E3B9E00DDC64A /* PreSignedInView.swift */; };
 		282CE61A2E0E3BCA00DDC64A /* SignedInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282CE6192E0E3BCA00DDC64A /* SignedInView.swift */; };
@@ -61,6 +63,8 @@
 		2801499D2E0F5BA600B89F52 /* CalendarPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPageView.swift; sourceTree = "<group>"; };
 		280149A42E0F5DFC00B89F52 /* CoreAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAppModel.swift; sourceTree = "<group>"; };
 		280149A92E0F685200B89F52 /* ElegantCalendar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ElegantCalendar.xcassets; sourceTree = "<group>"; };
+		280630682E2980B1006F4206 /* SentimentsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentsGridView.swift; sourceTree = "<group>"; };
+		2806306B2E29838C006F4206 /* RomanNumeralKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = RomanNumeralKit; path = "/Users/luciusaeliuscaelius/Library/Developer/Xcode/DerivedData/DreamHub-beiuljzyabuphffgxqdbgigsfpcu/SourcePackages/checkouts/RomanNumeralKit"; sourceTree = "<absolute>"; };
 		282CE6152E0E393E00DDC64A /* DreamsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamsListView.swift; sourceTree = "<group>"; };
 		282CE6172E0E3B9E00DDC64A /* PreSignedInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreSignedInView.swift; sourceTree = "<group>"; };
 		282CE6192E0E3BCA00DDC64A /* SignedInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInView.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2806306D2E298395006F4206 /* RomanNumeralKit in Frameworks */,
 				280149A02E0F5BF200B89F52 /* ElegantCalendar in Frameworks */,
 				285A15862E245507007DCD97 /* FirebaseFirestore in Frameworks */,
 				285A15822E24516F007DCD97 /* FirebaseCore in Frameworks */,
@@ -155,6 +160,14 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		2806306A2E29838C006F4206 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2806306B2E29838C006F4206 /* RomanNumeralKit */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		285A15802E245072007DCD97 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,7 +194,7 @@
 				28DA06B62E0E272900426E91 /* DreamHub */,
 				28DA06C72E0E272C00426E91 /* DreamHubTests */,
 				28DA06D12E0E272C00426E91 /* DreamHubUITests */,
-				28E01AE12E22F8EE00BC8D92 /* Frameworks */,
+				2806306A2E29838C006F4206 /* Frameworks */,
 				28DA06B52E0E272900426E91 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -255,13 +268,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		28E01AE12E22F8EE00BC8D92 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		28E01AE52E22F98800BC8D92 /* GeminiAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				28EE50A62E10BB29005D06DC /* NavBarView.swift */,
+				280630682E2980B1006F4206 /* SentimentsGridView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -309,6 +316,7 @@
 				285A15812E24516F007DCD97 /* FirebaseCore */,
 				285A15852E245507007DCD97 /* FirebaseFirestore */,
 				285A158A2E246B82007DCD97 /* MarkdownUI */,
+				2806306C2E298395006F4206 /* RomanNumeralKit */,
 			);
 			productName = DreamHub;
 			productReference = 28DA06B42E0E272900426E91 /* DreamHub.app */;
@@ -387,6 +395,7 @@
 				28E01AE22E22F94500BC8D92 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
 				285A157D2E244FB9007DCD97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				285A15892E246B68007DCD97 /* XCRemoteSwiftPackageReference "MarkdownUI" */,
+				280630672E296F66006F4206 /* XCRemoteSwiftPackageReference "RomanNumeralKit" */,
 			);
 			productRefGroup = 28DA06B52E0E272900426E91 /* Products */;
 			projectDirPath = "";
@@ -437,6 +446,7 @@
 				2862938E2E2581AC009F79D9 /* DreamTextFieldView.swift in Sources */,
 				285A15842E245476007DCD97 /* FirestoreDBMgr.swift in Sources */,
 				280149A52E0F5DFC00B89F52 /* CoreAppModel.swift in Sources */,
+				280630692E2980B1006F4206 /* SentimentsGridView.swift in Sources */,
 				285A157F2E245067007DCD97 /* FirebaseMgr.swift in Sources */,
 				2801499E2E0F5BA600B89F52 /* CalendarPageView.swift in Sources */,
 				282CE61A2E0E3BCA00DDC64A /* SignedInView.swift in Sources */,
@@ -783,6 +793,14 @@
 				minimumVersion = 4.3.2;
 			};
 		};
+		280630672E296F66006F4206 /* XCRemoteSwiftPackageReference "RomanNumeralKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kylehughes/RomanNumeralKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
 		285A157D2E244FB9007DCD97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -814,6 +832,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2801499C2E0F5B8800B89F52 /* XCRemoteSwiftPackageReference "ElegantCalendar" */;
 			productName = ElegantCalendar;
+		};
+		2806306C2E298395006F4206 /* RomanNumeralKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 280630672E296F66006F4206 /* XCRemoteSwiftPackageReference "RomanNumeralKit" */;
+			productName = RomanNumeralKit;
 		};
 		285A15812E24516F007DCD97 /* FirebaseCore */ = {
 			isa = XCSwiftPackageProductDependency;

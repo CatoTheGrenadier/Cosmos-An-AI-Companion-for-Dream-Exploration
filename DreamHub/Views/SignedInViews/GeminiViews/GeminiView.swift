@@ -37,12 +37,6 @@ struct GeminiView: View {
             }
             
             ZStack{
-                    ScrollView{
-                        VStack{
-                            Markdown(curDream.savedAnalysis ?? "")
-                        }
-                        .padding(.horizontal,25)
-                    }
                     if gemini.isLoading {
                          VStack{
                             ProgressView()
@@ -54,7 +48,16 @@ struct GeminiView: View {
                         }
                         .padding(.top, 250)
                         .padding(.horizontal, 50)
+                        .padding(.bottom, 185)
+                    } else {
+                        ScrollView{
+                            VStack{
+                                Markdown(curDream.savedAnalysis ?? "")
+                                SentimentsGridView(dream: curDream)
+                            }
+                            .padding(.horizontal,25)
                         }
+                    }
                 }
             
             VStack{
@@ -67,6 +70,8 @@ struct GeminiView: View {
                     unClicked = false
                     gemini.dreamContent = userInputDream
                     gemini.irlEvents = userInputIrlEvents
+                    var sentiments_string = "[" + coreAppModel.sentimentsSet.joined(separator: ", ") + "]"
+                    gemini.assembleFinalPrompt(sentimentsString: sentiments_string)
                     gemini.generateResponse()
                     userInputDream = ""
                     userInputIrlEvents = ""

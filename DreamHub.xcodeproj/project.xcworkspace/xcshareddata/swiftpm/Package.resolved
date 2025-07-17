@@ -1,5 +1,5 @@
 {
-  "originHash" : "739576be811ad9cc59a9112195b279d3d85b3026bbf4c240e953d5387d3c473e",
+  "originHash" : "65aad9f065711ef09afb427c1c97491fedf177bb506c53a3fa9a6645b9452ee5",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -161,6 +161,15 @@
       "state" : {
         "revision" : "540318ecedd63d883069ae7f1ed811a2df00b6ac",
         "version" : "2.4.0"
+      }
+    },
+    {
+      "identity" : "romannumeralkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kylehughes/RomanNumeralKit",
+      "state" : {
+        "revision" : "738d9ea027823f0ed592a10e4c6ecbf08636f76f",
+        "version" : "1.2.1"
       }
     },
     {

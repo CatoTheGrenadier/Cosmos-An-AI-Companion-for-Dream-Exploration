@@ -37,23 +37,7 @@ struct DreamDetailView: View {
                 .italic()
                 .padding(.bottom, 8)
 
-            VStack(alignment: .leading, spacing: 6) {
-                // Show sentiments 3 per row
-                let sentiments = dream.sentiments
-                let chunkedIndexes = stride(from: 0, to: sentiments.count, by: 3).map { $0 }
-
-                ForEach(chunkedIndexes, id: \.self) { i in
-                    let row = Array(sentiments[i..<min(i + 3, sentiments.count)])
-                    HStack {
-                        ForEach(row, id: \.self) { st in
-                            Text(st)
-                                .padding(6)
-                                .background(Color.blue.opacity(0.15))
-                                .cornerRadius(6)
-                        }
-                    }
-                }
-            }
+            SentimentsGridView(dream: dream)
 
             ScrollView {
                 Markdown(dream.savedAnalysis ?? "")

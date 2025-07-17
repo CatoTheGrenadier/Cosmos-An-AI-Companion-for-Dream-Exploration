@@ -59,9 +59,10 @@ struct DreamTextFieldView: View {
         } else {
             HStack{
                 ZStack{
-                    TextEditor(text: $value1)
+                    TextField("What did you dream about?", text: $value1)
+                        .lineLimit(1)
                         .scrollContentBackground(.hidden)
-                        .padding(5)
+                        .padding(.leading,15)
                         .frame(height:50)
                         .background(Color.indigo.opacity(0.2))
                         .disableAutocorrection(true)
@@ -134,7 +135,9 @@ struct DreamTextFieldView: View {
         } else {
             HStack{
                 ZStack{
-                    TextEditor(text: $value2)
+                    TextField("what's happening in lfe recently?", text: $value2)
+                        .lineLimit(1)
+                        .padding(.leading,15)
                         .scrollContentBackground(.hidden)
                         .padding(5)
                         .frame(height:50)

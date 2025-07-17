@@ -26,7 +26,7 @@ struct DreamsListView: View {
                        Rectangle()
                            .fill(Color.blue)
                            .frame(width: 4, height: 20)
-                       Text(dream.content ?? "")
+                       Text(dream.name ?? "")
                            .foregroundColor(.black)
                        Spacer()
                    }
