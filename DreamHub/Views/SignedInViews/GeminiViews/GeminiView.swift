@@ -51,9 +51,12 @@ struct GeminiView: View {
                         .padding(.bottom, 185)
                     } else {
                         ScrollView{
-                            VStack{
-                                Markdown(curDream.savedAnalysis ?? "")
+                            VStack(alignment: .leading, spacing: 20){
+                                Text(curDream.name ?? "")
+                                    .font(.title)
+                                    .fontWeight(.bold)
                                 SentimentsGridView(dream: curDream)
+                                Markdown(curDream.savedAnalysis ?? "")
                             }
                             .padding(.horizontal,25)
                         }
@@ -70,7 +73,7 @@ struct GeminiView: View {
                     unClicked = false
                     gemini.dreamContent = userInputDream
                     gemini.irlEvents = userInputIrlEvents
-                    var sentiments_string = "[" + coreAppModel.sentimentsSet.joined(separator: ", ") + "]"
+                    let sentiments_string = "[" + coreAppModel.sentimentsSet.joined(separator: ", ") + "]"
                     gemini.assembleFinalPrompt(sentimentsString: sentiments_string)
                     gemini.generateResponse()
                     userInputDream = ""

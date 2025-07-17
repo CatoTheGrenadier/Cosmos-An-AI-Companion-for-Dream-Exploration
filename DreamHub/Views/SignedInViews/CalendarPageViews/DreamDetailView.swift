@@ -19,29 +19,31 @@ struct DreamDetailView: View {
     }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text(dream.name ?? "")
-                .font(.title)
-                .fontWeight(.bold)
-
-            Text(dream.date.map {
-                DateFormatter.localizedString(from: $0, dateStyle: .medium, timeStyle: .short)
-            } ?? "")
+        ScrollView{
+            VStack(alignment: .leading, spacing: 12) {
+                Text(dream.name ?? "")
+                    .font(.title)
+                    .fontWeight(.bold)
+                
+                Text(dream.date.map {
+                    DateFormatter.localizedString(from: $0, dateStyle: .medium, timeStyle: .short)
+                } ?? "")
                 .font(.subheadline)
                 .foregroundColor(.gray)
-
-            Text(dream.content ?? "")
-                .padding(.top, 8)
-
-            Text(dream.recentEvents ?? "")
-                .italic()
-                .padding(.bottom, 8)
-
-            SentimentsGridView(dream: dream)
-
-            ScrollView {
-                Markdown(dream.savedAnalysis ?? "")
-                    .padding(.top, 10)
+                
+                Text(dream.content ?? "")
+                    .padding(.top, 8)
+                
+                Text(dream.recentEvents ?? "")
+                    .italic()
+                    .padding(.bottom, 8)
+                
+                SentimentsGridView(dream: dream)
+                
+                ScrollView {
+                    Markdown(dream.savedAnalysis ?? "")
+                        .padding(.top, 10)
+                }
             }
         }
         .padding()

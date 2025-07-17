@@ -9,12 +9,36 @@ import Foundation
 import GoogleGenerativeAI
 
 class GeminiLLM: ObservableObject {
-    let model = GenerativeModel(name: "gemini-2.0-flash", apiKey: APIKey.default)
+    let model: GenerativeModel
+    
     @Published var isLoading = false
     @Published var response = ""
     @Published var jsonOutput = "{}"
     @Published var dreamContent = ""
     @Published var irlEvents = ""
+    
+    init() {
+        let jsonSchema = Schema(
+            type: .object,
+            properties: [
+                "name": Schema(type: .string),
+                "content": Schema(type: .string),
+                "savedAnalysis": Schema(type: .string),
+                "recentEvents": Schema(type: .string),
+                "sentiments": Schema(type: .array, items: Schema(type: .string))
+            ],
+            requiredProperties: ["name", "content", "savedAnalysis", "recentEvents", "sentiments"]
+        )
+        
+        let config = GenerationConfig(
+            responseMIMEType: "application/json",
+            responseSchema: jsonSchema
+        )
+        
+        self.model = GenerativeModel(name: "gemini-2.0-flash", apiKey: APIKey.default, generationConfig: config)
+    }
+    
+    
     // --- Part 1: Core Dream Analysis Instructions (static) ---
     
     var analysisInstructions = """
@@ -57,7 +81,7 @@ class GeminiLLM: ObservableObject {
     - `recentEvents`: (string) The recent life events provided.
     - `sentiments`: (array of strings) A list of the generated sentiments, each formatted as 'Word_StrengthNumber' (e.g., 'Hopeful_3').
 
-    Ensure the JSON is complete and valid. Do not include any other text, headers, or footers outside the JSON string.
+    ENSURE THE JSON IS CEOMPLETE AND VALID AND READY TO BE PARSED WITH SWIFT. Do not include any other text, headers, or footers outside the JSON string.
     """
 
     var finalPrompt = ""
