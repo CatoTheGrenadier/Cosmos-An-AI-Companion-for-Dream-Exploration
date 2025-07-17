@@ -10,7 +10,11 @@ import Foundation
 class CoreAppModel: Codable, ObservableObject {
     var dreamsList: [DreamModel] = []
     var sentimentsSet: Set<String> = []
-    var userId: String = UUID().uuidString
+    var userId: String
+    
+    init(uid: String) {
+        userId = uid
+    }
     
     func saveANDupload(_ dream: DreamModel, completion: ((Error?) -> Void)? = nil) {
         let docRef = FirestoreMgr.shared.db.collection("AppData").document("users").collection("usersCollection").document(userId).collection("dreams")

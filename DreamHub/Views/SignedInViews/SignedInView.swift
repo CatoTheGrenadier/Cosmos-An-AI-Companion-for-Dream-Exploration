@@ -9,9 +9,17 @@ import Foundation
 import SwiftUI
 
 struct SignedInView: View {
-    @ObservedObject var coreAppModel = CoreAppModel()
+    @ObservedObject var authMgr: AuthMgr
+    @ObservedObject var coreAppModel: CoreAppModel
     @State var page = 1
     @State var date = Date()
+    
+    init() {
+        self.authMgr = authMgr
+        self.coreAppModel = CoreAppModel(uid: authMgr.currentUserUID ?? "")
+        self.page = page
+        self.date = date
+    }
     
     var body: some View {
         VStack{

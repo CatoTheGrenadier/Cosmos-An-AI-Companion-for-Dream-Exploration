@@ -9,11 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     @State var isSignedIn = true
+    @ObservedObject var authMgr = AuthMgr()
     var body: some View {
         if (isSignedIn){
-            SignedInView()
+            SignedInView(authMgr: authMgr)
         } else {
-            PreSignedInView()
+            PreSignedInView(authMgr: authMgr)
         }
     }
 }
