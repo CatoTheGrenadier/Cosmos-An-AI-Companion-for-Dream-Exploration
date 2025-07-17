@@ -13,11 +13,10 @@
 		280149A52E0F5DFC00B89F52 /* CoreAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280149A42E0F5DFC00B89F52 /* CoreAppModel.swift */; };
 		280149AA2E0F685200B89F52 /* ElegantCalendar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280149A92E0F685200B89F52 /* ElegantCalendar.xcassets */; };
 		280630692E2980B1006F4206 /* SentimentsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280630682E2980B1006F4206 /* SentimentsGridView.swift */; };
-		2806306D2E298395006F4206 /* RomanNumeralKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2806306C2E298395006F4206 /* RomanNumeralKit */; };
 		280630712E299452006F4206 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 280630702E299452006F4206 /* FirebaseAuth */; };
 		28181C662E2995EF00EE7727 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28181C652E2995EF00EE7727 /* UserModel.swift */; };
 		28181C692E29980D00EE7727 /* AuthMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28181C682E29980D00EE7727 /* AuthMgr.swift */; };
-		28181C6C2E299FF200EE7727 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28181C6B2E299FF200EE7727 /* SignInView.swift */; };
+		28181C6C2E299FF200EE7727 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28181C6B2E299FF200EE7727 /* AuthView.swift */; };
 		28181C6E2E29A23A00EE7727 /* SuperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28181C6D2E29A23A00EE7727 /* SuperView.swift */; };
 		282CE6162E0E393E00DDC64A /* DreamsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282CE6152E0E393E00DDC64A /* DreamsListView.swift */; };
 		282CE61A2E0E3BCA00DDC64A /* SignedInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282CE6192E0E3BCA00DDC64A /* SignedInView.swift */; };
@@ -28,6 +27,7 @@
 		285A15862E245507007DCD97 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 285A15852E245507007DCD97 /* FirebaseFirestore */; };
 		285A158B2E246B82007DCD97 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 285A158A2E246B82007DCD97 /* MarkdownUI */; };
 		2862938E2E2581AC009F79D9 /* DreamTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2862938D2E2581AC009F79D9 /* DreamTextFieldView.swift */; };
+		28B7B1922E29B2570084CC40 /* RomanNumeralKit in Frameworks */ = {isa = PBXBuildFile; productRef = 28B7B1912E29B2570084CC40 /* RomanNumeralKit */; };
 		28C76BF52E1858D8000B5716 /* DreamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C76BF42E1858D8000B5716 /* DreamDetailView.swift */; };
 		28DA06B82E0E272900426E91 /* DreamHubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DA06B72E0E272900426E91 /* DreamHubApp.swift */; };
 		28DA06BA2E0E272900426E91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DA06B92E0E272900426E91 /* ContentView.swift */; };
@@ -71,7 +71,7 @@
 		2806306B2E29838C006F4206 /* RomanNumeralKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = RomanNumeralKit; path = "/Users/luciusaeliuscaelius/Library/Developer/Xcode/DerivedData/DreamHub-beiuljzyabuphffgxqdbgigsfpcu/SourcePackages/checkouts/RomanNumeralKit"; sourceTree = "<absolute>"; };
 		28181C652E2995EF00EE7727 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		28181C682E29980D00EE7727 /* AuthMgr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMgr.swift; sourceTree = "<group>"; };
-		28181C6B2E299FF200EE7727 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		28181C6B2E299FF200EE7727 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		28181C6D2E29A23A00EE7727 /* SuperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperView.swift; sourceTree = "<group>"; };
 		282CE6152E0E393E00DDC64A /* DreamsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamsListView.swift; sourceTree = "<group>"; };
 		282CE6192E0E3BCA00DDC64A /* SignedInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInView.swift; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2806306D2E298395006F4206 /* RomanNumeralKit in Frameworks */,
 				280149A02E0F5BF200B89F52 /* ElegantCalendar in Frameworks */,
+				28B7B1922E29B2570084CC40 /* RomanNumeralKit in Frameworks */,
 				285A15862E245507007DCD97 /* FirebaseFirestore in Frameworks */,
 				285A15822E24516F007DCD97 /* FirebaseCore in Frameworks */,
 				28E01AE42E22F95000BC8D92 /* GoogleGenerativeAI in Frameworks */,
@@ -199,7 +199,7 @@
 			children = (
 				28181C6F2E29A4E600EE7727 /* Utils */,
 				28181C6D2E29A23A00EE7727 /* SuperView.swift */,
-				28181C6B2E299FF200EE7727 /* SignInView.swift */,
+				28181C6B2E299FF200EE7727 /* AuthView.swift */,
 			);
 			path = AuthentcationViews;
 			sourceTree = "<group>";
@@ -359,8 +359,8 @@
 				285A15812E24516F007DCD97 /* FirebaseCore */,
 				285A15852E245507007DCD97 /* FirebaseFirestore */,
 				285A158A2E246B82007DCD97 /* MarkdownUI */,
-				2806306C2E298395006F4206 /* RomanNumeralKit */,
 				280630702E299452006F4206 /* FirebaseAuth */,
+				28B7B1912E29B2570084CC40 /* RomanNumeralKit */,
 			);
 			productName = DreamHub;
 			productReference = 28DA06B42E0E272900426E91 /* DreamHub.app */;
@@ -439,7 +439,7 @@
 				28E01AE22E22F94500BC8D92 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
 				285A157D2E244FB9007DCD97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				285A15892E246B68007DCD97 /* XCRemoteSwiftPackageReference "MarkdownUI" */,
-				280630672E296F66006F4206 /* XCRemoteSwiftPackageReference "RomanNumeralKit" */,
+				28B7B1902E29B2570084CC40 /* XCRemoteSwiftPackageReference "RomanNumeralKit" */,
 			);
 			productRefGroup = 28DA06B52E0E272900426E91 /* Products */;
 			projectDirPath = "";
@@ -500,7 +500,7 @@
 				2801499B2E0F575200B89F52 /* DreamModel.swift in Sources */,
 				28EE50AA2E10BD0A005D06DC /* GeminiView.swift in Sources */,
 				282CE6162E0E393E00DDC64A /* DreamsListView.swift in Sources */,
-				28181C6C2E299FF200EE7727 /* SignInView.swift in Sources */,
+				28181C6C2E299FF200EE7727 /* AuthView.swift in Sources */,
 				28DA06B82E0E272900426E91 /* DreamHubApp.swift in Sources */,
 				28181C662E2995EF00EE7727 /* UserModel.swift in Sources */,
 				28181C6E2E29A23A00EE7727 /* SuperView.swift in Sources */,
@@ -840,14 +840,6 @@
 				minimumVersion = 4.3.2;
 			};
 		};
-		280630672E296F66006F4206 /* XCRemoteSwiftPackageReference "RomanNumeralKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kylehughes/RomanNumeralKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.2.1;
-			};
-		};
 		285A157D2E244FB9007DCD97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -862,6 +854,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 2.4.1;
+			};
+		};
+		28B7B1902E29B2570084CC40 /* XCRemoteSwiftPackageReference "RomanNumeralKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kylehughes/RomanNumeralKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
 			};
 		};
 		28E01AE22E22F94500BC8D92 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
@@ -879,11 +879,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2801499C2E0F5B8800B89F52 /* XCRemoteSwiftPackageReference "ElegantCalendar" */;
 			productName = ElegantCalendar;
-		};
-		2806306C2E298395006F4206 /* RomanNumeralKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 280630672E296F66006F4206 /* XCRemoteSwiftPackageReference "RomanNumeralKit" */;
-			productName = RomanNumeralKit;
 		};
 		280630702E299452006F4206 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -904,6 +899,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 285A15892E246B68007DCD97 /* XCRemoteSwiftPackageReference "MarkdownUI" */;
 			productName = MarkdownUI;
+		};
+		28B7B1912E29B2570084CC40 /* RomanNumeralKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28B7B1902E29B2570084CC40 /* XCRemoteSwiftPackageReference "RomanNumeralKit" */;
+			productName = RomanNumeralKit;
 		};
 		28E01AE32E22F95000BC8D92 /* GoogleGenerativeAI */ = {
 			isa = XCSwiftPackageProductDependency;
