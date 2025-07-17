@@ -10,7 +10,7 @@ import SwiftUI
 
 struct SignedInView: View {
     @ObservedObject var coreAppModel = CoreAppModel()
-    @State var page = 2
+    @State var page = 1
     @State var date = Date()
     
     var body: some View {

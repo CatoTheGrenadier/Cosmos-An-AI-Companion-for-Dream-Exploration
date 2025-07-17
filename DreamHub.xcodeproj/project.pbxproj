@@ -120,8 +120,8 @@
 		280149A12E0F5CCF00B89F52 /* SignedInViews */ = {
 			isa = PBXGroup;
 			children = (
+				282CE6192E0E3BCA00DDC64A /* SignedInView.swift */,
 				2862938C2E25813E009F79D9 /* GeminiViews */,
-				2862938B2E257F38009F79D9 /* Pages */,
 				28EE50A82E10BCEC005D06DC /* Utils */,
 				280149A22E0F5CDB00B89F52 /* CalendarPageViews */,
 			);
@@ -163,14 +163,6 @@
 				285A15832E245475007DCD97 /* FirestoreDBMgr.swift */,
 			);
 			path = Firebase;
-			sourceTree = "<group>";
-		};
-		2862938B2E257F38009F79D9 /* Pages */ = {
-			isa = PBXGroup;
-			children = (
-				282CE6192E0E3BCA00DDC64A /* SignedInView.swift */,
-			);
-			path = Pages;
 			sourceTree = "<group>";
 		};
 		2862938C2E25813E009F79D9 /* GeminiViews */ = {

@@ -93,7 +93,11 @@ struct GeminiView: View {
                 } else {
                     Button(action: {
                         coreAppModel.dreamsList.append(curDream)
+                        for sentimentString in curDream.sentiments {
+                            coreAppModel.sentimentsSet.insert(sentimentString)
+                        }
                         coreAppModel.saveANDupload(curDream)
+                        coreAppModel.saveANDupload_SentimentsSet()
                     }) {
                         Text("Save analysis")
                             .padding()
