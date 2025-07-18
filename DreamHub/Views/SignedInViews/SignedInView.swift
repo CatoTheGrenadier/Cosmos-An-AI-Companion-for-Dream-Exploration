@@ -35,7 +35,7 @@ struct SignedInView: View {
                 }
             }
             
-            NavBarView(page: $page)
+            NavBarView(page: $page, authMgr: authMgr)
         }
     }
 }

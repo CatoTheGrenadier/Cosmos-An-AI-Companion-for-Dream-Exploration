@@ -10,6 +10,7 @@ import SwiftUI
 
 struct NavBarView: View {
     @Binding var page: Int
+    @ObservedObject var authMgr: AuthMgr
     
     var body: some View {
         HStack{
@@ -36,8 +37,28 @@ struct NavBarView: View {
             
             Spacer()
             
-            Button {
-                page = 3
+            Menu {
+                Button(action: {
+                    Task {
+                        await authMgr.signOutUser()
+                    }
+                }, label: {
+                    HStack(spacing: 5){
+                        Image(systemName: "arrow.uturn.left")
+                            .foregroundColor(.black)
+                        Text("Log out")
+                            .foregroundColor(.black)
+                    }
+                })
+                
+                Button(action: {
+                    page = 3
+                }, label: {
+                    HStack{
+                        Text("Profile")
+                            .foregroundColor(.black)
+                    }
+                })
             } label: {
                 Image(systemName: "person.fill")
             }

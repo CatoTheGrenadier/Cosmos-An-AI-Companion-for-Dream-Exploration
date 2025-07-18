@@ -64,7 +64,7 @@ class AuthMgr: ObservableObject {
     }
     
     
-    func signOutUser(email: String, password: String) async {
+    func signOutUser() async {
         do {
             let authResult = try await Auth.auth().signOut()
             print("Successfully signed out")

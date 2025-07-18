@@ -14,6 +14,8 @@ class CoreAppModel: Codable, ObservableObject {
     
     init(uid: String) {
         userId = uid
+        downloadDreams()
+        getSentimentsSet()
     }
     
     func saveANDupload(_ dream: DreamModel, completion: ((Error?) -> Void)? = nil) {
@@ -50,6 +52,7 @@ class CoreAppModel: Codable, ObservableObject {
             }
             
             self.dreamsList = docs.compactMap { try? $0.data(as: DreamModel.self) }
+            print("✅ Dreams downloaded without error")
             completion?()
         }
     }
@@ -74,36 +77,30 @@ class CoreAppModel: Codable, ObservableObject {
      }
     
     func getSentimentsSet(completion: (() -> Void)? = nil) {
-        let docRef = FirestoreMgr.shared.db.collection("AppData")
-        docRef.getDocuments { snapshot, error in
+        let docRef = FirestoreMgr.shared.db.collection("AppData").document("sentimentsSet")
+        docRef.getDocument { snapshot, error in
             if let error = error {
                 print("❌ Download error:", error.localizedDescription)
                 completion?()
                 return
             }
             
-            guard let doc = snapshot?.documents else {
+            guard let doc = snapshot, doc.exists else {
                 print("No sentiments found")
                 self.sentimentsSet = []
                 completion?()
                 return
             }
             
-            if let sentimentStringArray = doc as? [String] {
+            if let sentimentStringArray = doc.data()?["allSentiments"] as? [String] {
                 self.sentimentsSet = Set(sentimentStringArray)
+                print("✅ SentimentsSet downloaded successfully")
             } else {
                 print("Warning: SentimentsSet is not valid!")
             }
             
             completion?()
         }
-    }
-    
-    
-    
-    init(){
-        downloadDreams()
-        getSentimentsSet()
     }
 }
 

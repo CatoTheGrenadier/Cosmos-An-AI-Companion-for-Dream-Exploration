@@ -21,7 +21,8 @@ struct AuthView: View {
         VStack(alignment: .center, spacing: 15){
             
             Image(systemName: "moon.zzz.fill")
-                .frame(width: 200, height: 200)
+                .resizable()
+                .frame(width: 150, height: 150)
                 .padding(.bottom, 80)
             
             
