@@ -29,12 +29,17 @@ struct CalendarPageView: View, ElegantCalendarDataSource, ElegantCalendarDelegat
 
     var body: some View {
         NavigationStack {
-            ElegantCalendarView(calendarManager: calendarManager)
-                .padding(.top, 50)
-                .onAppear {
-                      calendarManager.datasource = self
-                      calendarManager.delegate   = self
-                    }
+            ZStack {
+                Color.craftBrown.opacity(0.5)
+                    .ignoresSafeArea()
+
+                ElegantCalendarView(calendarManager: calendarManager)
+                    .padding(.top, 50)
+                    .onAppear {
+                          calendarManager.datasource = self
+                          calendarManager.delegate   = self
+                        }
+            }
         }
     }
 

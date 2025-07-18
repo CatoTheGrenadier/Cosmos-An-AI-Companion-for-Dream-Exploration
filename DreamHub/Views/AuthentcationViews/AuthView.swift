@@ -32,15 +32,13 @@ struct AuthView: View {
             
             
             HStack{
-                ZStack{
-                    TextField("Email", text: $email)
-                        .lineLimit(1)
-                        .scrollContentBackground(.hidden)
-                        .padding(.leading,15)
-                        .frame(height:50)
-                        .background(Color.craftBrown.opacity(0.5))
-                        .disableAutocorrection(true)
-                }
+                TextField("Email", text: $email)
+                    .lineLimit(1)
+                    .scrollContentBackground(.hidden)
+                    .padding(.leading,15)
+                    .frame(height:50)
+                    .background(Color.white)
+                    .disableAutocorrection(true)
                 
                 Button(action: {
                     email = ""
@@ -48,25 +46,22 @@ struct AuthView: View {
                     Image(systemName: "delete.backward.fill")
                 })
                 .padding(.trailing)
-                .foregroundColor(.black)
+                .foregroundColor(.gray)
             }
             .frame(height:50)
-            .border(.black, width: 2)
-            .background(Color.indigo.opacity(0.2))
             .cornerRadius(10)
+            .border(.gray, width: 2)
+            .background(Color.indigo.opacity(0.2))
             
             
             HStack{
-                ZStack{
-                    SecureField("Password", text: $password)
-                        .autocapitalization(.none)
-                        .disableAutocorrection(true)
-                        .padding(.horizontal, 16)
-                        .frame(height: 50)
-                        .foregroundStyle(Color(.black))
-                        .background(Color.craftBrown.opacity(0.5))
-                        .cornerRadius(10)
-                }
+                SecureField("Password", text: $password)
+                    .lineLimit(1)
+                    .scrollContentBackground(.hidden)
+                    .padding(.leading,15)
+                    .frame(height:50)
+                    .background(Color.white)
+                    .disableAutocorrection(true)
                 
                 Button(action: {
                     password = ""
@@ -74,24 +69,22 @@ struct AuthView: View {
                     Image(systemName: "delete.backward.fill")
                 })
                 .padding(.trailing)
-                .foregroundColor(.black)
+                .foregroundColor(.gray)
             }
             .frame(height:50)
-            .border(.black, width: 2)
+            .border(.gray, width: 2)
             .background(Color.indigo.opacity(0.2))
             .cornerRadius(10)
             
             if signal == 1 {
                 HStack{
-                    ZStack{
-                        SecureField("Confirm Password", text: $confirmPassword)
-                            .autocapitalization(.none)
-                            .disableAutocorrection(true)
-                            .padding(.horizontal, 16)
-                            .frame(height: 50)
-                            .background(Color.craftBrown.opacity(0.5))
-                            .cornerRadius(10)
-                    }
+                    SecureField("Confirm Password", text: $confirmPassword)
+                        .lineLimit(1)
+                        .scrollContentBackground(.hidden)
+                        .padding(.leading,15)
+                        .frame(height:50)
+                        .background(Color.white)
+                        .disableAutocorrection(true)
                     
                     Button(action: {
                         confirmPassword = ""
@@ -99,10 +92,10 @@ struct AuthView: View {
                         Image(systemName: "delete.backward.fill")
                     })
                     .padding(.trailing)
-                    .foregroundColor(.black)
+                    .foregroundColor(.gray)
                 }
                 .frame(height:50)
-                .border(.black, width: 2)
+                .border(.gray, width: 2)
                 .background(Color.indigo.opacity(0.2))
                 .cornerRadius(10)
             }
@@ -180,20 +173,22 @@ struct AuthView: View {
                 }
             }) {
                 if signal == 0{
-                    HStack {
+                    HStack(alignment: .bottom) {
                         Text("Don't have an account?")
-                            .foregroundColor(.white)
+                            .foregroundColor(.black.opacity(0.7))
+                            .font(.caption)
                         Text("Sign Up")
-                            .foregroundColor(.blue)
-                            .fontWeight(.semibold)
+                            .foregroundColor(.craftBrown)
+                            .fontWeight(.bold)
                     }
                 } else {
-                    HStack {
+                    HStack(alignment: .bottom)  {
                         Text("Already have an account?")
-                            .foregroundColor(.gray)
+                            .foregroundColor(.black.opacity(0.7))
+                            .font(.caption)
                         Text("Sign in")
-                            .foregroundColor(.blue)
-                            .fontWeight(.semibold)
+                            .foregroundColor(.craftBrown)
+                            .fontWeight(.bold)
                     }
                 }
             }

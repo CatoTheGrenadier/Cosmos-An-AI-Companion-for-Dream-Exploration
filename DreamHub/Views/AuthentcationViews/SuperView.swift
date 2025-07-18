@@ -19,6 +19,5 @@ struct SuperView: View {
                 SignedInView(authMgr: authMgr)
             }
         }
-        .background(Color.brown.opacity(0.5))
     }
 }
