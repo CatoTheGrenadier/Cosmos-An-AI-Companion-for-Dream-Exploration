@@ -20,13 +20,17 @@
 		28181C6E2E29A23A00EE7727 /* SuperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28181C6D2E29A23A00EE7727 /* SuperView.swift */; };
 		282CE6162E0E393E00DDC64A /* DreamsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282CE6152E0E393E00DDC64A /* DreamsListView.swift */; };
 		282CE61A2E0E3BCA00DDC64A /* SignedInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282CE6192E0E3BCA00DDC64A /* SignedInView.swift */; };
-		285A157C2E244E0F007DCD97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 285A157B2E244E0F007DCD97 /* GoogleService-Info.plist */; };
 		285A157F2E245067007DCD97 /* FirebaseMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A157E2E245067007DCD97 /* FirebaseMgr.swift */; };
 		285A15822E24516F007DCD97 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 285A15812E24516F007DCD97 /* FirebaseCore */; };
 		285A15842E245476007DCD97 /* FirestoreDBMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A15832E245475007DCD97 /* FirestoreDBMgr.swift */; };
 		285A15862E245507007DCD97 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 285A15852E245507007DCD97 /* FirebaseFirestore */; };
 		285A158B2E246B82007DCD97 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 285A158A2E246B82007DCD97 /* MarkdownUI */; };
 		2862938E2E2581AC009F79D9 /* DreamTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2862938D2E2581AC009F79D9 /* DreamTextFieldView.swift */; };
+		2886F6F62E2AAD9300F0E8BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2886F6F52E2AAD9300F0E8BD /* GoogleService-Info.plist */; };
+		2886F6F92E2AAF5000F0E8BD /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 2886F6F82E2AAF5000F0E8BD /* GoogleSignIn */; };
+		2886F6FB2E2AAF5500F0E8BD /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2886F6FA2E2AAF5500F0E8BD /* GoogleSignInSwift */; };
+		2886F6FF2E2AB5DF00F0E8BD /* Google_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2886F6FE2E2AB5DF00F0E8BD /* Google_icon.png */; };
+		2886F7062E2ACE3400F0E8BD /* Starry.png in Resources */ = {isa = PBXBuildFile; fileRef = 2886F7052E2ACE3400F0E8BD /* Starry.png */; };
 		28B7B1922E29B2570084CC40 /* RomanNumeralKit in Frameworks */ = {isa = PBXBuildFile; productRef = 28B7B1912E29B2570084CC40 /* RomanNumeralKit */; };
 		28C76BF52E1858D8000B5716 /* DreamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C76BF42E1858D8000B5716 /* DreamDetailView.swift */; };
 		28DA06B82E0E272900426E91 /* DreamHubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DA06B72E0E272900426E91 /* DreamHubApp.swift */; };
@@ -75,10 +79,12 @@
 		28181C6D2E29A23A00EE7727 /* SuperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperView.swift; sourceTree = "<group>"; };
 		282CE6152E0E393E00DDC64A /* DreamsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamsListView.swift; sourceTree = "<group>"; };
 		282CE6192E0E3BCA00DDC64A /* SignedInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInView.swift; sourceTree = "<group>"; };
-		285A157B2E244E0F007DCD97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		285A157E2E245067007DCD97 /* FirebaseMgr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMgr.swift; sourceTree = "<group>"; };
 		285A15832E245475007DCD97 /* FirestoreDBMgr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreDBMgr.swift; sourceTree = "<group>"; };
 		2862938D2E2581AC009F79D9 /* DreamTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamTextFieldView.swift; sourceTree = "<group>"; };
+		2886F6F52E2AAD9300F0E8BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2886F6FE2E2AB5DF00F0E8BD /* Google_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Google_icon.png; sourceTree = "<group>"; };
+		2886F7052E2ACE3400F0E8BD /* Starry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Starry.png; sourceTree = "<group>"; };
 		28C76BF42E1858D8000B5716 /* DreamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamDetailView.swift; sourceTree = "<group>"; };
 		28DA06B42E0E272900426E91 /* DreamHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DA06B72E0E272900426E91 /* DreamHubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamHubApp.swift; sourceTree = "<group>"; };
@@ -103,7 +109,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2886F6FB2E2AAF5500F0E8BD /* GoogleSignInSwift in Frameworks */,
 				280149A02E0F5BF200B89F52 /* ElegantCalendar in Frameworks */,
+				2886F6F92E2AAF5000F0E8BD /* GoogleSignIn in Frameworks */,
 				28B7B1922E29B2570084CC40 /* RomanNumeralKit in Frameworks */,
 				285A15862E245507007DCD97 /* FirebaseFirestore in Frameworks */,
 				285A15822E24516F007DCD97 /* FirebaseCore in Frameworks */,
@@ -162,6 +170,7 @@
 		280149AB2E0F686500B89F52 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				2886F6FD2E2AB50C00F0E8BD /* Images */,
 				280149A92E0F685200B89F52 /* ElegantCalendar.xcassets */,
 				28DA06BB2E0E272C00426E91 /* Assets.xcassets */,
 			);
@@ -211,14 +220,6 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		285A15802E245072007DCD97 /* FirebaseInfo */ = {
-			isa = PBXGroup;
-			children = (
-				285A157B2E244E0F007DCD97 /* GoogleService-Info.plist */,
-			);
-			path = FirebaseInfo;
-			sourceTree = "<group>";
-		};
 		2862938C2E25813E009F79D9 /* GeminiViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +227,24 @@
 				2862938D2E2581AC009F79D9 /* DreamTextFieldView.swift */,
 			);
 			path = GeminiViews;
+			sourceTree = "<group>";
+		};
+		2886F6FD2E2AB50C00F0E8BD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2886F7052E2ACE3400F0E8BD /* Starry.png */,
+				2886F6FE2E2AB5DF00F0E8BD /* Google_icon.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		2886F7002E2ABD8600F0E8BD /* PackageInfo */ = {
+			isa = PBXGroup;
+			children = (
+				2886F6F52E2AAD9300F0E8BD /* GoogleService-Info.plist */,
+				28E01AE92E22F9E600BC8D92 /* GenerativeAI-Info.plist */,
+			);
+			path = PackageInfo;
 			sourceTree = "<group>";
 		};
 		28DA06AB2E0E272900426E91 = {
@@ -253,8 +272,7 @@
 		28DA06B62E0E272900426E91 /* DreamHub */ = {
 			isa = PBXGroup;
 			children = (
-				285A15802E245072007DCD97 /* FirebaseInfo */,
-				28E01AE52E22F98800BC8D92 /* GeminiAPIInfo */,
+				2886F7002E2ABD8600F0E8BD /* PackageInfo */,
 				280149AB2E0F686500B89F52 /* Assets */,
 				28DA06E32E0E369C00426E91 /* Models */,
 				28DA06E12E0E283B00426E91 /* Views */,
@@ -311,19 +329,11 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		28E01AE52E22F98800BC8D92 /* GeminiAPIInfo */ = {
-			isa = PBXGroup;
-			children = (
-				28E01AEB2E22FAF700BC8D92 /* APIKey.swift */,
-				28E01AE92E22F9E600BC8D92 /* GenerativeAI-Info.plist */,
-			);
-			path = GeminiAPIInfo;
-			sourceTree = "<group>";
-		};
 		28E01AED2E22FC3700BC8D92 /* GeminiAPIModels */ = {
 			isa = PBXGroup;
 			children = (
 				28E01AEE2E22FC5000BC8D92 /* GeminiLLMmodel.swift */,
+				28E01AEB2E22FAF700BC8D92 /* APIKey.swift */,
 			);
 			path = GeminiAPIModels;
 			sourceTree = "<group>";
@@ -361,6 +371,8 @@
 				285A158A2E246B82007DCD97 /* MarkdownUI */,
 				280630702E299452006F4206 /* FirebaseAuth */,
 				28B7B1912E29B2570084CC40 /* RomanNumeralKit */,
+				2886F6F82E2AAF5000F0E8BD /* GoogleSignIn */,
+				2886F6FA2E2AAF5500F0E8BD /* GoogleSignInSwift */,
 			);
 			productName = DreamHub;
 			productReference = 28DA06B42E0E272900426E91 /* DreamHub.app */;
@@ -440,6 +452,7 @@
 				285A157D2E244FB9007DCD97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				285A15892E246B68007DCD97 /* XCRemoteSwiftPackageReference "MarkdownUI" */,
 				28B7B1902E29B2570084CC40 /* XCRemoteSwiftPackageReference "RomanNumeralKit" */,
+				2886F6F72E2AAF3700F0E8BD /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = 28DA06B52E0E272900426E91 /* Products */;
 			projectDirPath = "";
@@ -459,10 +472,12 @@
 			files = (
 				28DA06BF2E0E272C00426E91 /* Preview Assets.xcassets in Resources */,
 				28DA06BC2E0E272C00426E91 /* Assets.xcassets in Resources */,
+				2886F7062E2ACE3400F0E8BD /* Starry.png in Resources */,
 				28E3D08A2E2483DB00D206F5 /* README.md in Resources */,
 				28E01AEA2E22F9E600BC8D92 /* GenerativeAI-Info.plist in Resources */,
-				285A157C2E244E0F007DCD97 /* GoogleService-Info.plist in Resources */,
+				2886F6F62E2AAD9300F0E8BD /* GoogleService-Info.plist in Resources */,
 				280149AA2E0F685200B89F52 /* ElegantCalendar.xcassets in Resources */,
+				2886F6FF2E2AB5DF00F0E8BD /* Google_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,6 +687,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DreamHub/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DreamHub/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -700,6 +716,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DreamHub/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DreamHub/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -856,6 +873,14 @@
 				minimumVersion = 2.4.1;
 			};
 		};
+		2886F6F72E2AAF3700F0E8BD /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		28B7B1902E29B2570084CC40 /* XCRemoteSwiftPackageReference "RomanNumeralKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kylehughes/RomanNumeralKit";
@@ -899,6 +924,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 285A15892E246B68007DCD97 /* XCRemoteSwiftPackageReference "MarkdownUI" */;
 			productName = MarkdownUI;
+		};
+		2886F6F82E2AAF5000F0E8BD /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2886F6F72E2AAF3700F0E8BD /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		2886F6FA2E2AAF5500F0E8BD /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2886F6F72E2AAF3700F0E8BD /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
 		};
 		28B7B1912E29B2570084CC40 /* RomanNumeralKit */ = {
 			isa = XCSwiftPackageProductDependency;

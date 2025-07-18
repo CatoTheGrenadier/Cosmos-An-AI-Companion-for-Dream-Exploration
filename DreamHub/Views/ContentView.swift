@@ -14,7 +14,3 @@ struct ContentView: View {
         SuperView(authMgr: authMgr)
     }
 }
-
-#Preview {
-    ContentView()
-}

@@ -12,10 +12,13 @@ struct SuperView: View {
     @ObservedObject var authMgr: AuthMgr
     
     var body: some View {
-        if authMgr.currentUserUID == nil {
-            AuthView(authMgr: authMgr)
-        } else {
-            SignedInView(authMgr: authMgr)
+        VStack{
+            if authMgr.currentUserUID == nil {
+                AuthView(authMgr: authMgr)
+            } else {
+                SignedInView(authMgr: authMgr)
+            }
         }
+        .background(Color.brown.opacity(0.5))
     }
 }

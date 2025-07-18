@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import GoogleSignIn
 
 struct AuthView: View {
     @ObservedObject var authMgr: AuthMgr
@@ -20,10 +21,14 @@ struct AuthView: View {
     var body: some View {
         VStack(alignment: .center, spacing: 15){
             
+            Spacer()
+            
             Image(systemName: "moon.zzz.fill")
                 .resizable()
                 .frame(width: 150, height: 150)
-                .padding(.bottom, 80)
+                .foregroundStyle(.indigo, .yellow)
+            
+            Spacer()
             
             
             HStack{
@@ -33,11 +38,8 @@ struct AuthView: View {
                         .scrollContentBackground(.hidden)
                         .padding(.leading,15)
                         .frame(height:50)
-                        .background(Color(.systemGray6))
+                        .background(Color.craftBrown.opacity(0.5))
                         .disableAutocorrection(true)
-                    
-                    Rectangle()
-                        .foregroundColor(.clear)
                 }
                 
                 Button(action: {
@@ -46,10 +48,10 @@ struct AuthView: View {
                     Image(systemName: "delete.backward.fill")
                 })
                 .padding(.trailing)
-                .foregroundColor(.gray)
+                .foregroundColor(.black)
             }
             .frame(height:50)
-            .border(.gray, width: 2)
+            .border(.black, width: 2)
             .background(Color.indigo.opacity(0.2))
             .cornerRadius(10)
             
@@ -61,11 +63,9 @@ struct AuthView: View {
                         .disableAutocorrection(true)
                         .padding(.horizontal, 16)
                         .frame(height: 50)
-                        .background(Color(.systemGray6))
+                        .foregroundStyle(Color(.black))
+                        .background(Color.craftBrown.opacity(0.5))
                         .cornerRadius(10)
-                    
-                    Rectangle()
-                        .foregroundColor(.clear)
                 }
                 
                 Button(action: {
@@ -74,10 +74,10 @@ struct AuthView: View {
                     Image(systemName: "delete.backward.fill")
                 })
                 .padding(.trailing)
-                .foregroundColor(.gray)
+                .foregroundColor(.black)
             }
             .frame(height:50)
-            .border(.gray, width: 2)
+            .border(.black, width: 2)
             .background(Color.indigo.opacity(0.2))
             .cornerRadius(10)
             
@@ -89,11 +89,8 @@ struct AuthView: View {
                             .disableAutocorrection(true)
                             .padding(.horizontal, 16)
                             .frame(height: 50)
-                            .background(Color(.systemGray6))
+                            .background(Color.craftBrown.opacity(0.5))
                             .cornerRadius(10)
-                        
-                        Rectangle()
-                            .foregroundColor(.clear)
                     }
                     
                     Button(action: {
@@ -102,10 +99,10 @@ struct AuthView: View {
                         Image(systemName: "delete.backward.fill")
                     })
                     .padding(.trailing)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.black)
                 }
                 .frame(height:50)
-                .border(.gray, width: 2)
+                .border(.black, width: 2)
                 .background(Color.indigo.opacity(0.2))
                 .cornerRadius(10)
             }
@@ -159,7 +156,7 @@ struct AuthView: View {
                             .font(.headline)
                             .frame(maxWidth: .infinity)
                             .frame(height: 50)
-                            .background(Color.blue)
+                            .background(Color.brown.opacity(1))
                             .cornerRadius(10)
                     } else {
                         Text("Sign up")
@@ -167,7 +164,7 @@ struct AuthView: View {
                             .font(.headline)
                             .frame(maxWidth: .infinity)
                             .frame(height: 50)
-                            .background(Color.blue)
+                            .background(Color.brown.opacity(1))
                             .cornerRadius(10)
                         }
                 }
@@ -185,7 +182,7 @@ struct AuthView: View {
                 if signal == 0{
                     HStack {
                         Text("Don't have an account?")
-                            .foregroundColor(.gray)
+                            .foregroundColor(.white)
                         Text("Sign Up")
                             .foregroundColor(.blue)
                             .fontWeight(.semibold)
@@ -200,6 +197,24 @@ struct AuthView: View {
                     }
                 }
             }
+            
+            Button(action: {
+                Task {
+                    if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                       let rootViewController = windowScene.windows.first?.rootViewController {
+                        await authMgr.signInUser(presenting: rootViewController)
+                    } else {
+                        authMgr.authError = "Could not find a view controller to present Google Sign-In"
+                    }
+                }
+            }) {
+                Image("Google_icon")
+                    .resizable()
+                    .frame(width: 30, height: 30)
+            }
+            .padding(.top, 25)
+            
+            
         }
         .padding()
     }
