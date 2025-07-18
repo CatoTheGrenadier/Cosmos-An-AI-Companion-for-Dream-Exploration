@@ -32,6 +32,7 @@
 		2886F6FF2E2AB5DF00F0E8BD /* Google_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2886F6FE2E2AB5DF00F0E8BD /* Google_icon.png */; };
 		2886F7062E2ACE3400F0E8BD /* Starry.png in Resources */ = {isa = PBXBuildFile; fileRef = 2886F7052E2ACE3400F0E8BD /* Starry.png */; };
 		28B7B1922E29B2570084CC40 /* RomanNumeralKit in Frameworks */ = {isa = PBXBuildFile; productRef = 28B7B1912E29B2570084CC40 /* RomanNumeralKit */; };
+		28C0BF172E2AF4A300AA097D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C0BF162E2AF4A300AA097D /* ProfileView.swift */; };
 		28C76BF52E1858D8000B5716 /* DreamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C76BF42E1858D8000B5716 /* DreamDetailView.swift */; };
 		28DA06B82E0E272900426E91 /* DreamHubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DA06B72E0E272900426E91 /* DreamHubApp.swift */; };
 		28DA06BA2E0E272900426E91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DA06B92E0E272900426E91 /* ContentView.swift */; };
@@ -85,6 +86,7 @@
 		2886F6F52E2AAD9300F0E8BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2886F6FE2E2AB5DF00F0E8BD /* Google_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Google_icon.png; sourceTree = "<group>"; };
 		2886F7052E2ACE3400F0E8BD /* Starry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Starry.png; sourceTree = "<group>"; };
+		28C0BF162E2AF4A300AA097D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		28C76BF42E1858D8000B5716 /* DreamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamDetailView.swift; sourceTree = "<group>"; };
 		28DA06B42E0E272900426E91 /* DreamHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DA06B72E0E272900426E91 /* DreamHubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamHubApp.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		280149A12E0F5CCF00B89F52 /* SignedInViews */ = {
 			isa = PBXGroup;
 			children = (
+				28C0BF152E2AF48B00AA097D /* Profile views */,
 				282CE6192E0E3BCA00DDC64A /* SignedInView.swift */,
 				2862938C2E25813E009F79D9 /* GeminiViews */,
 				28EE50A82E10BCEC005D06DC /* Utils */,
@@ -245,6 +248,14 @@
 				28E01AE92E22F9E600BC8D92 /* GenerativeAI-Info.plist */,
 			);
 			path = PackageInfo;
+			sourceTree = "<group>";
+		};
+		28C0BF152E2AF48B00AA097D /* Profile views */ = {
+			isa = PBXGroup;
+			children = (
+				28C0BF162E2AF4A300AA097D /* ProfileView.swift */,
+			);
+			path = "Profile views";
 			sourceTree = "<group>";
 		};
 		28DA06AB2E0E272900426E91 = {
@@ -521,6 +532,7 @@
 				28181C6E2E29A23A00EE7727 /* SuperView.swift in Sources */,
 				28EE50A72E10BB29005D06DC /* NavBarView.swift in Sources */,
 				28E01AEC2E22FAF700BC8D92 /* APIKey.swift in Sources */,
+				28C0BF172E2AF4A300AA097D /* ProfileView.swift in Sources */,
 				28C76BF52E1858D8000B5716 /* DreamDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

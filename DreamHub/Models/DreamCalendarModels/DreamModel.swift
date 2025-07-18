@@ -9,7 +9,7 @@ import Foundation
 import FirebaseFirestore
 import FirebaseFirestore
 
-class DreamModel: Identifiable, ObservableObject, Codable, Equatable {
+class DreamModel: Identifiable, ObservableObject, Codable, Equatable, Comparable {
     var id: String?
     var date: Date?
     var content: String?
@@ -30,5 +30,9 @@ class DreamModel: Identifiable, ObservableObject, Codable, Equatable {
     
     static func == (lhs: DreamModel, rhs: DreamModel) -> Bool {
         return lhs.id == rhs.id
+    }
+    
+    static func < (lhs: DreamModel, rhs: DreamModel) -> Bool {
+        return lhs.date ?? Date() > rhs.date ?? Date()
     }
 }

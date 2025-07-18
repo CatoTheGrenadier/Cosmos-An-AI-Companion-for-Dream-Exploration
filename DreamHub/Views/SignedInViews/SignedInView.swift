@@ -30,7 +30,7 @@ struct SignedInView: View {
                     } else if page == 1{
                         GeminiView(coreAppModel: coreAppModel, date: date)
                     } else {
-                        GeminiView(coreAppModel: coreAppModel, date: date)
+                        ProfileView(coreAppModel: coreAppModel)
                     }
                 }
             }
