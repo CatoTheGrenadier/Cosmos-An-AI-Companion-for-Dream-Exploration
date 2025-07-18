@@ -26,36 +26,39 @@ struct DreamTextFieldView: View {
                 
                 Spacer()
                 HStack(alignment: .center){
+                    Spacer()
+                    
                     Button(action: {
                         focused1 = false
                     }, label: {
-                        Text("Confirm")
-                            .fontWeight(.bold)
+                        Image(systemName: "square.and.arrow.down")
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                            .foregroundStyle(.indigo)
                     })
                     .foregroundColor(.brown)
-                    .cornerRadius(10)
                     .padding(.trailing,60)
                     
-                    Text("|")
-                        .foregroundColor(.gray)
-                        .font(.largeTitle)
-                        .frame(alignment: .center)
+                    Spacer()
                     
                     Button(action: {
                         value1 = ""
                     }, label: {
-                        Text("Clear")
-                            .fontWeight(.bold)
+                        Image(systemName: "trash")
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                            .foregroundStyle(.indigo)
                     })
                     .padding(.leading,60)
                     .foregroundColor(.red)
-                    .cornerRadius(10)
+                    
+                    Spacer()
                 }
-                Spacer()
+                .padding(.bottom,12)
             }
-            .border(.gray, width: 2)
-            .background(Color.indigo.opacity(0.2))
+            .background(Color(.systemGray6))
             .cornerRadius(10)
+            .padding(.bottom, 6)
         } else {
             HStack{
                 ZStack{
@@ -85,9 +88,9 @@ struct DreamTextFieldView: View {
                 .foregroundColor(.gray)
             }
             .frame(height:50)
-            .border(.gray, width: 2)
             .background(Color.indigo.opacity(0.2))
             .cornerRadius(10)
+            .padding(.bottom, 6)
         }
         
         if focused2{
@@ -100,42 +103,45 @@ struct DreamTextFieldView: View {
                     .disableAutocorrection(true)
                 
                 Spacer()
+                
                 HStack(alignment: .center){
+                    Spacer()
                     Button(action: {
                         focused2 = false
                     }, label: {
-                        Text("Confirm")
-                            .fontWeight(.bold)
+                        Image(systemName: "square.and.arrow.down")
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                            .foregroundStyle(.indigo)
                     })
                     .foregroundColor(.brown)
-                    .cornerRadius(10)
                     .padding(.trailing,60)
                     
-                    Text("|")
-                        .foregroundColor(.gray)
-                        .font(.largeTitle)
-                        .frame(alignment: .center)
+                    Spacer()
                     
                     Button(action: {
                         value2 = ""
                     }, label: {
-                        Text("Clear")
-                            .fontWeight(.bold)
+                        Image(systemName: "trash")
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                            .foregroundStyle(.indigo)
                     })
                     .padding(.leading,60)
                     .foregroundColor(.red)
+                    
+                    Spacer()
                 }
-                Spacer()
+                .padding(.bottom,12)
                 
             }
-            .border(.gray, width: 2)
-            .background(Color.indigo.opacity(0.2))
+            .background(Color(.systemGray6))
             .cornerRadius(10)
             
         } else {
             HStack{
                 ZStack{
-                    TextField("what's happening in lfe recently?", text: $value2)
+                    TextField("what's happening in life lately?", text: $value2)
                         .lineLimit(1)
                         .padding(.leading,15)
                         .scrollContentBackground(.hidden)
@@ -162,7 +168,6 @@ struct DreamTextFieldView: View {
                 .foregroundColor(.gray)
             }
             .frame(height:50)
-            .border(.gray, width: 2)
             .background(Color.indigo.opacity(0.2))
             .cornerRadius(10)
         }

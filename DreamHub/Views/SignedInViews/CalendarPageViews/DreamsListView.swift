@@ -30,7 +30,6 @@ struct DreamsListView: View {
                            .foregroundColor(.black)
                        Spacer()
                    }
-                   .background(Color.brown.opacity(0.5))
                }
             }
         }

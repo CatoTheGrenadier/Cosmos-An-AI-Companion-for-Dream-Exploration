@@ -13,11 +13,6 @@ struct DreamDetailView: View {
     @State var coreAppModel: CoreAppModel
     var dream: DreamModel
 
-    init(coreAppModel: CoreAppModel, dream: DreamModel) {
-        self.coreAppModel = coreAppModel
-        self.dream = dream
-    }
-
     var body: some View {
         ScrollView{
             VStack(alignment: .leading, spacing: 12) {
@@ -25,11 +20,35 @@ struct DreamDetailView: View {
                     .font(.title)
                     .fontWeight(.bold)
                 
-                Text(dream.date.map {
-                    DateFormatter.localizedString(from: $0, dateStyle: .medium, timeStyle: .short)
-                } ?? "")
-                .font(.subheadline)
-                .foregroundColor(.gray)
+                SentimentsGridView(dream: dream)
+                
+                HStack{
+                    Text(dream.date.map {
+                        DateFormatter.localizedString(from: $0, dateStyle: .medium, timeStyle: .short)
+                    } ?? "")
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+                    
+                    Spacer()
+                    
+                    Button(action: {
+                        if let index = coreAppModel.dreamsList.firstIndex(where: { $0.id == dream.id }) {
+                            coreAppModel.dreamsList.remove(at: index)
+                            Task {
+                                await coreAppModel.deleteDream(dream)
+                            }
+                            print("Dream removed from local list.")
+                        } else {
+                            print("Dream not found in local list to remove.")
+                        }
+                    }, label: {
+                        Image(systemName: "trash")
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                            .foregroundStyle(.indigo)
+                    })
+                    .padding(.trailing, 25)
+                }
                 
                 Text(dream.content ?? "")
                     .padding(.top, 8)
@@ -37,8 +56,6 @@ struct DreamDetailView: View {
                 Text(dream.recentEvents ?? "")
                     .italic()
                     .padding(.bottom, 8)
-                
-                SentimentsGridView(dream: dream)
                 
                 ScrollView {
                     Markdown(dream.savedAnalysis ?? "")

@@ -9,7 +9,7 @@ import Foundation
 import FirebaseFirestore
 import FirebaseFirestore
 
-class DreamModel: Identifiable, ObservableObject, Codable {
+class DreamModel: Identifiable, ObservableObject, Codable, Equatable {
     var id: String?
     var date: Date?
     var content: String?
@@ -26,5 +26,9 @@ class DreamModel: Identifiable, ObservableObject, Codable {
         sentiments = []
         savedAnalysis = ""
         recentEvents = ""
+    }
+    
+    static func == (lhs: DreamModel, rhs: DreamModel) -> Bool {
+        return lhs.id == rhs.id
     }
 }

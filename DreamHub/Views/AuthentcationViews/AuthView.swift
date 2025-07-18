@@ -37,7 +37,7 @@ struct AuthView: View {
                     .scrollContentBackground(.hidden)
                     .padding(.leading,15)
                     .frame(height:50)
-                    .background(Color.white)
+                    .background(Color(.systemGray6))
                     .disableAutocorrection(true)
                 
                 Button(action: {
@@ -49,9 +49,8 @@ struct AuthView: View {
                 .foregroundColor(.gray)
             }
             .frame(height:50)
-            .cornerRadius(10)
-            .border(.gray, width: 2)
             .background(Color.indigo.opacity(0.2))
+            .cornerRadius(10)
             
             
             HStack{
@@ -60,7 +59,7 @@ struct AuthView: View {
                     .scrollContentBackground(.hidden)
                     .padding(.leading,15)
                     .frame(height:50)
-                    .background(Color.white)
+                    .background(Color(.systemGray6))
                     .disableAutocorrection(true)
                 
                 Button(action: {
@@ -72,7 +71,6 @@ struct AuthView: View {
                 .foregroundColor(.gray)
             }
             .frame(height:50)
-            .border(.gray, width: 2)
             .background(Color.indigo.opacity(0.2))
             .cornerRadius(10)
             
@@ -83,7 +81,7 @@ struct AuthView: View {
                         .scrollContentBackground(.hidden)
                         .padding(.leading,15)
                         .frame(height:50)
-                        .background(Color.white)
+                        .background(Color(.systemGray6))
                         .disableAutocorrection(true)
                     
                     Button(action: {
@@ -95,7 +93,6 @@ struct AuthView: View {
                     .foregroundColor(.gray)
                 }
                 .frame(height:50)
-                .border(.gray, width: 2)
                 .background(Color.indigo.opacity(0.2))
                 .cornerRadius(10)
             }

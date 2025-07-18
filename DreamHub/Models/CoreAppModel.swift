@@ -7,8 +7,8 @@
 
 import Foundation
 
-class CoreAppModel: Codable, ObservableObject {
-    var dreamsList: [DreamModel] = []
+class CoreAppModel: ObservableObject {
+    @Published var dreamsList: [DreamModel] = []
     var sentimentsSet: Set<String> = []
     var userId: String = ""
     
@@ -32,6 +32,17 @@ class CoreAppModel: Codable, ObservableObject {
         } catch {
             print("❌ Encoding error:", error.localizedDescription)
             completion?(error)
+        }
+     }
+    
+    func deleteDream(_ dream: DreamModel, completion: ((Error?) -> Void)? = nil) async {
+        let docRef = FirestoreMgr.shared.db.collection("AppData").document("users").collection("usersCollection").document(userId).collection("dreams").document(dream.id ?? "")
+        do {
+            try await docRef.delete()
+            print("Document successfully deleted!")
+        } catch {
+            print("❌ Encoding error:", error.localizedDescription)
+            print("Error removing document: \(error.localizedDescription)")
         }
      }
     

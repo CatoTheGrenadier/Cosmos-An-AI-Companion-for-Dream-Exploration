@@ -79,23 +79,27 @@ struct GeminiView: View {
                     userInputDream = ""
                     userInputIrlEvents = ""
                 }) {
-                    Text("Interpret My Dream")
+                    Text("Interprete")
                         .padding()
+                        .frame(width: 160, height: 50)
                         .foregroundColor(.white)
                         .background(Color.blue)
+                        .fontWeight(.bold)
                         .cornerRadius(10)
                 }
-                .padding(.trailing, 25)
+                .padding(.trailing, 20)
                 
                 
                 if (gemini.isLoading || unClicked){
                     Button(action: {
                         
                     }) {
-                        Text("Processing...")
+                        Text("Save")
                             .padding()
+                            .frame(width: 160, height: 50)
                             .foregroundColor(.white)
                             .background(Color.gray)
+                            .fontWeight(.bold)
                             .cornerRadius(10)
                     }
                 } else {
@@ -107,10 +111,12 @@ struct GeminiView: View {
                         coreAppModel.saveANDupload(curDream)
                         coreAppModel.saveANDupload_SentimentsSet()
                     }) {
-                        Text("Save analysis")
+                        Text("Save")
                             .padding()
+                            .frame(width: 160, height: 50)
                             .foregroundColor(.white)
                             .background(Color.blue)
+                            .fontWeight(.bold)
                             .cornerRadius(10)
                     }
                 }
