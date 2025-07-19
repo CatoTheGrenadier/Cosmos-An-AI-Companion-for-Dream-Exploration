@@ -130,6 +130,7 @@ struct GeminiView: View {
                 curDream.recentEvents = newDream?.recentEvents
                 curDream.savedAnalysis = newDream?.savedAnalysis
                 curDream.sentiments = newDream?.sentiments ?? []
+                curDream.score = newDream?.score
                 curDream.date = date
                 print("onChange finished")
             }

@@ -11,11 +11,27 @@ class CoreAppModel: ObservableObject {
     @Published var dreamsList: [DreamModel] = []
     var sentimentsSet: Set<String> = []
     var userId: String = ""
+    @Published var dateScoresDict: [Date: [Double]] = [:]
+    @Published var dateSumScoreDict: [Date: Double] = [:]
     
     init(uid: String) {
         userId = uid
         downloadDreams()
         getSentimentsSet()
+    }
+    
+    func calculateDailyMoodScore(){
+        for dream in self.dreamsList{
+            let dayKey = Calendar.current.startOfDay(for: dream.date ?? Date())
+            if dateScoresDict[dayKey] == nil {
+                dateScoresDict[dayKey] = [Double(dream.score ?? 50)]
+                dateSumScoreDict[dayKey] = Double(dream.score ?? 50)
+            } else {
+                dateScoresDict[dayKey]?.append(Double(dream.score ?? 50))
+                dateSumScoreDict[dayKey]? += Double(dream.score ?? 50)
+            }
+        }
+        print("✅ Daily mood scores calculated!")
     }
     
     func sortBYtime(){
@@ -68,6 +84,7 @@ class CoreAppModel: ObservableObject {
             
             self.dreamsList = docs.compactMap { try? $0.data(as: DreamModel.self) }
             print("✅ Dreams downloaded without error")
+            self.calculateDailyMoodScore()
             completion?()
         }
     }

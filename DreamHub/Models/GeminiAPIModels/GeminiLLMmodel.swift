@@ -25,9 +25,10 @@ class GeminiLLM: ObservableObject {
                 "content": Schema(type: .string),
                 "savedAnalysis": Schema(type: .string),
                 "recentEvents": Schema(type: .string),
-                "sentiments": Schema(type: .array, items: Schema(type: .string))
+                "sentiments": Schema(type: .array, items: Schema(type: .string)),
+                "score": Schema(type: .integer)
             ],
-            requiredProperties: ["name", "content", "savedAnalysis", "recentEvents", "sentiments"]
+            requiredProperties: ["name", "content", "savedAnalysis", "recentEvents", "sentiments", "score"]
         )
         
         let config = GenerationConfig(
@@ -62,7 +63,7 @@ class GeminiLLM: ObservableObject {
     var recentEventsContext = """
     Use the following recent life events to inform and deepen the psychological analysis:
 
-    """ // You'll append the actual recent events string here
+    """ 
 
     // --- Part 3: Sentiment Formatting Rules (static) ---
     // This part defines how the sentiments should be generated,
@@ -70,9 +71,8 @@ class GeminiLLM: ObservableObject {
     var sentimentRules = """
     When generating sentiments, use words from the provided list whenever possible. Only create new words if absolutely necessary. Each sentiment must be followed by an underscore and a number from 1 to 4 (e.g., 'Joyful_1'), indicating the strength of the emotion (1 for weakest, 4 for strongest). If a word from the list already has a strength (e.g., 'Calm_2'), only change the number to reflect the desired strength (e.g., 'Calm_4'), do not append another number.
     The allowed sentiments list is:
-    """ // You'll append the actual sentiment array (e.g., `["Joyful_1", "Sad_2", ...]`) here
+    """
 
-    // --- Part 4: JSON Output Format (static) ---
     var jsonOutputFormat = """
     The final output must be a single JSON string, parsable directly by Swift's `JSONDecoder`. It should contain the following properties:
     - `name`: (string) An auto-assigned, fitting title for the dream.
@@ -80,7 +80,8 @@ class GeminiLLM: ObservableObject {
     - `savedAnalysis`: (string) The full, Markdown-formatted dream analysis (from parts 1, 2, and 3 above).
     - `recentEvents`: (string) The recent life events provided.
     - `sentiments`: (array of strings) A list of the generated sentiments, each formatted as 'Word_StrengthNumber' (e.g., 'Hopeful_3').
-
+    - `score`: (integer) A number between 1 to 100, with 1 as worst mood and 100 as best mood.
+                    
     ENSURE THE JSON IS CEOMPLETE AND VALID AND READY TO BE PARSED WITH SWIFT. Do not include any other text, headers, or footers outside the JSON string.
     """
 

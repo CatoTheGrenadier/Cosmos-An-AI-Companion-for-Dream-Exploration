@@ -17,6 +17,7 @@ class DreamModel: Identifiable, ObservableObject, Codable, Equatable, Comparable
     var sentiments: [String]
     var savedAnalysis: String?
     var recentEvents: String?
+    var score: Int?
     
     init(){
         id = UUID().uuidString 
@@ -26,6 +27,7 @@ class DreamModel: Identifiable, ObservableObject, Codable, Equatable, Comparable
         sentiments = []
         savedAnalysis = ""
         recentEvents = ""
+        score = 0
     }
     
     static func == (lhs: DreamModel, rhs: DreamModel) -> Bool {

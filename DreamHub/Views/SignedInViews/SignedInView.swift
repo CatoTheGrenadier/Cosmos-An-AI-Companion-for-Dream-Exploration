@@ -11,14 +11,14 @@ import SwiftUI
 struct SignedInView: View {
     @ObservedObject var authMgr: AuthMgr
     @ObservedObject var coreAppModel: CoreAppModel
-    @State var page = 2
-    @State var date = Date()
+    @State var page: Int
+    @State var date: Date
     
     init(authMgr: AuthMgr) {
         self.authMgr = authMgr
         self.coreAppModel = CoreAppModel(uid: authMgr.currentUserUID ?? "")
-        self.page = page
-        self.date = date
+        self.page = 1
+        self.date = Date()
     }
     
     var body: some View {
@@ -29,6 +29,8 @@ struct SignedInView: View {
                         CalendarPageView(coreAppModel: coreAppModel)
                     } else if page == 1{
                         GeminiView(coreAppModel: coreAppModel, date: date)
+                    } else if page == 2 {
+                        StatisticalView(coreAppModel: coreAppModel)
                     } else {
                         ProfileView(coreAppModel: coreAppModel)
                     }
