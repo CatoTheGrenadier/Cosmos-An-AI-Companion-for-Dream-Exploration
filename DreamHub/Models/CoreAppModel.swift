@@ -18,6 +18,10 @@ class CoreAppModel: ObservableObject {
         getSentimentsSet()
     }
     
+    func sortBYtime(){
+        self.dreamsList.sort()
+    }
+    
     func saveANDupload(_ dream: DreamModel, completion: ((Error?) -> Void)? = nil) {
         let docRef = FirestoreMgr.shared.db.collection("AppData").document("users").collection("usersCollection").document(userId).collection("dreams")
         do {
@@ -83,7 +87,7 @@ class CoreAppModel: ObservableObject {
                     print("✅ SentimentsSet uploaded successfully")
                 }
                 completion?(error)
-            }
+            } 
         }
      }
     

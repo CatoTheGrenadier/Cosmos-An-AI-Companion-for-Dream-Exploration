@@ -31,6 +31,7 @@
 		2886F6FB2E2AAF5500F0E8BD /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2886F6FA2E2AAF5500F0E8BD /* GoogleSignInSwift */; };
 		2886F6FF2E2AB5DF00F0E8BD /* Google_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2886F6FE2E2AB5DF00F0E8BD /* Google_icon.png */; };
 		2886F7062E2ACE3400F0E8BD /* Starry.png in Resources */ = {isa = PBXBuildFile; fileRef = 2886F7052E2ACE3400F0E8BD /* Starry.png */; };
+		289B5EC72E2C0C9A00EDB165 /* DreamListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B5EC62E2C0C9A00EDB165 /* DreamListRowView.swift */; };
 		28B7B1922E29B2570084CC40 /* RomanNumeralKit in Frameworks */ = {isa = PBXBuildFile; productRef = 28B7B1912E29B2570084CC40 /* RomanNumeralKit */; };
 		28C0BF172E2AF4A300AA097D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C0BF162E2AF4A300AA097D /* ProfileView.swift */; };
 		28C76BF52E1858D8000B5716 /* DreamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C76BF42E1858D8000B5716 /* DreamDetailView.swift */; };
@@ -86,6 +87,7 @@
 		2886F6F52E2AAD9300F0E8BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2886F6FE2E2AB5DF00F0E8BD /* Google_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Google_icon.png; sourceTree = "<group>"; };
 		2886F7052E2ACE3400F0E8BD /* Starry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Starry.png; sourceTree = "<group>"; };
+		289B5EC62E2C0C9A00EDB165 /* DreamListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamListRowView.swift; sourceTree = "<group>"; };
 		28C0BF162E2AF4A300AA097D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		28C76BF42E1858D8000B5716 /* DreamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamDetailView.swift; sourceTree = "<group>"; };
 		28DA06B42E0E272900426E91 /* DreamHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -254,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				28C0BF162E2AF4A300AA097D /* ProfileView.swift */,
+				289B5EC62E2C0C9A00EDB165 /* DreamListRowView.swift */,
 			);
 			path = "Profile views";
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				280630692E2980B1006F4206 /* SentimentsGridView.swift in Sources */,
 				285A157F2E245067007DCD97 /* FirebaseMgr.swift in Sources */,
 				2801499E2E0F5BA600B89F52 /* CalendarPageView.swift in Sources */,
+				289B5EC72E2C0C9A00EDB165 /* DreamListRowView.swift in Sources */,
 				282CE61A2E0E3BCA00DDC64A /* SignedInView.swift in Sources */,
 				28E01AEF2E22FC5000BC8D92 /* GeminiLLMmodel.swift in Sources */,
 				28DA06BA2E0E272900426E91 /* ContentView.swift in Sources */,

@@ -123,13 +123,16 @@ struct GeminiView: View {
             }
         }
         .onChange(of: gemini.jsonOutput, {
-            let newDream = gemini.decodeDream()
-            curDream.name = newDream?.name
-            curDream.content = newDream?.content
-            curDream.recentEvents = newDream?.recentEvents
-            curDream.savedAnalysis = newDream?.savedAnalysis
-            curDream.sentiments = newDream?.sentiments ?? []
-            curDream.date = date
+            if gemini.jsonOutput != "{}" {
+                let newDream = gemini.decodeDream()
+                curDream.name = newDream?.name
+                curDream.content = newDream?.content
+                curDream.recentEvents = newDream?.recentEvents
+                curDream.savedAnalysis = newDream?.savedAnalysis
+                curDream.sentiments = newDream?.sentiments ?? []
+                curDream.date = date
+                print("onChange finished")
+            }
         })
     }
 }
