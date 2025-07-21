@@ -100,7 +100,7 @@ class GeminiLLM: ObservableObject {
                 isLoading = false
                 response = result.text ?? "No response found"
                 if (response != "No response found"){
-                    jsonOutput = cleanJSONString(response)
+                    jsonOutput = cleanJSONString(raw:response)
                 }
                 dreamContent = ""
                 finalPrompt = ""
@@ -129,7 +129,7 @@ class GeminiLLM: ObservableObject {
         }
     }
     
-    func cleanJSONString(_ raw: String) -> String {
+    func cleanJSONString(raw: String) -> String {
         var lines = raw.components(separatedBy: .newlines)
         if let first = lines.first, first.hasPrefix("```") {
             lines.removeFirst()
